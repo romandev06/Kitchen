@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kitchen</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- lightGallery -->
+    <link rel="stylesheet" href="lightgallery-css/lightgallery.css">
+
+
+    <!-- animate.css -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- wow.js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <section class="container">
+                <div class="header__content">
+                    <div class="address">
+                        <img src="img/geo.svg" alt="our geo">
+                        <p>г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а</p>
+                    </div>
+
+                    <div class="phone">
+                        <a href="tel:+7(3466)681598"><img src="img/call.svg" alt="call us"></a>
+                        <a href="tel:+7(3466)681598">+7 (3466) 68-15-98</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+
+        <main class="main">
+            <div class="main-nav">
+                <section class="container">
+                    <nav class="main-nav__content">
+                        <img src="img/ktichen-lgogo.png" alt="kitchen logo">
+                        <ul>
+                            <li><a href="">Каталог товаров</a></li>
+                            <li><a href="">Кухонные модули</a></li>
+                            <li><a href="">Декоры</a></li>
+                            <li><a href="">Фотопечать</a></li>
+                            <li><a href="">Готовые решения</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <a href="tel:+7(3466)681598">Заказать звонок</a>
+                    </nav>
+                </section>
+            </div>
+
+
+
+            <div class="kitchen-price">
+                <section>
+                    <div class="kitchen-price__content">
+                        <div class="kitchen-info">
+                            <h2 class="kitchen-title" id="demo"></h2>
+                            <p class="kitchen-description-text">Изготовим и доставим кухонный гарнитур в Излучинск, Мегион, Стрежевой, Лангепас, Радужный и другие города ХМАО</p>
+                            <div class="benefits-container-1">
+                                <div class="benefit-1">
+                                    <img src="img/payment.svg" alt="installment without overpayment!">
+                                    <p>Рассрочка без переплаты!</p>
+                                </div>
+                                <div class="benefit-2">
+                                    <img src="img/ruler.svg" alt="free measurement and design project">
+                                    <p>Бесплатный замер и дизайн проект</p>
+                                </div>
+                            </div>
+                            <div class="benefits-container-2">
+                                <div class="benefit-3">
+                                    <img src="img/facades.svg" alt="more than 500 facade colors">
+                                    <p>Более 500 цветов фасадов</p>
+                                </div>
+                                <div class="benefit-4">
+                                    <img src="img/time.svg" alt="compliance with production deadlines">
+                                    <p>Соблюдение сроков изготовления <span>Если не выполним в срок – мы заплатим Вам неустойку</span></p>
+                                </div>
+                            </div>
+                            <div class="calculate-cost">
+                                <button>Рассчитать стоимость</button>
+                                <div class="kitchen-gift">
+                                    <img src="img/Gift.svg" alt="gift">
+                                    <p>Пройдите тест из 5 вопросов и получите дизайн проект, ирасчет стоимость кухни  + гарантированный подарок при заказе кухни!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kitchen-bg"></div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="quiz">
+                <div class="container">
+                    <section class="quiz-importaint-info">
+                        <h2 class="quiz-title">Пройдите тест за 1 минуту и <span>узнайте стоимость</span> вашей будущей кухни прямо сейчас</h2>
+                        <div class="get-gift">
+                            <img src="img/Gift.svg" alt="">
+                            <p>И получите один из подарков при заказе кухни.</p>
+                        </div>
+                    </section>
+
+                    <section class="quiz-slider">
+                        <div class="swiper mySwiper-quiz">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide__quiz1">
+                                    <img src="img/img3big.jpeg" alt="">
+                                    <div class="quiz-contenst">
+                                        <div class="quiz-line"></div>
+                                        <h3>Ответьте на 5 вопросов и получите дизайн проект и расчет стоимость кухни</h3>
+                                        <p><span>+</span> гарантированый подарок при заказе кухни!</p>
+                                        <button class="find-cost__btn">Узнать стоимость</button>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide quiz-section2">
+                                    <h2>Какое <span>расположение кухни</span> вас интересует</h2>
+                                    <section class="swiper-slide__quiz2">
+                                        <div class="quiz-card" id="btn-1">
+                                            <div class="quiz-card__select">
+                                                <input class="quiz-radio__btn" type="radio" name="quiz-radio__btn" data-radio-btn="btn-1">
+                                                <h4>Прямая</h4>
+                                            </div>
+                                            <img src="img/kitchenform-1.png" alt="">
+                                        </div>
+                                        <div class="quiz-card" id="btn-2">
+                                            <div class="quiz-card__select">
+                                                <input class="quiz-radio__btn" type="radio" name="quiz-radio__btn" data-radio-btn="btn-2">
+                                                <h4>Угловая</h4>
+                                            </div>
+                                            <img src="img/kitchenform-2.png" alt="">
+                                        </div>
+                                        <div class="quiz-card" id="btn-3">
+                                            <div class="quiz-card__select">
+                                                <input class="quiz-radio__btn" type="radio" name="quiz-radio__btn" data-radio-btn="btn-3">
+                                                <h4>П-образная</h4>
+                                            </div>
+                                            <img src="img/kitchenform-3.png" alt="">
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev swiper-button-prev__quiz hidden-quiz__btn">
+                                <img src="img/quiz-prev__btn.png" alt="">
+                            </div>
+                            <div class="swiper-button-next swiper-button-next__quiz hidden-quiz__btn">
+                                Далее →
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="mini-benefits__title"><span>Кухни Микс</span> - это :</div>
+                    <section class="mini-benefits">
+                        <article class="benefits">
+                            <img src="img/installment.svg" alt="">
+                            <h3>рассрочка без переплаты</h3>
+                            <p>Мы не делаем наценок. Наши цены заморожены с 2015 года</p>
+                        </article>
+                        <article class="benefits benefits-2">
+                            <img src="img/discount.svg" alt="">
+                            <h3>Скидки</h3>
+                            <p>При заказе кухни матовая столешница 26 мм - в подарок!</p>
+                        </article>
+                        <article class="benefits">
+                            <img src="img/big-fasades.svg" alt="">
+                            <h3>Более 500 цветов фасадов</h3>
+                            <p>Цветовые решения на любой вкус</p>
+                        </article>
+                        <article class="benefits">
+                            <img src="img/big-ruler.svg" alt="">
+                            <h3>Бесплатный замер и дизайн проект</h3>
+                            <p>Бесплатный дизайн проект кухни за 1 день</p>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="accessories-materials">
+                <section class="container">
+                    <h2>Фурнитура  и  <span>материалы</span></h2>
+                    <section class="accessories-materials-cards__wrapper">
+                        <div class="accessories-materials__card">
+                            <article>
+                                <div class="accessories-materials__text">
+                                    <div class="accessories-materials__description">
+                                        <div>
+                                            <h3>Лдсп</h3>
+                                            <p>- Хорошая устойчивость к температурным перепадам и высокой влажности.</p>
+                                            <p>- Большой выбор различных цветов.</p>
+                                        </div>
+                                        <div>
+                                            <img src="img/ldsp.jpeg" alt="Лдсп">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Как и в случае с МДФ, у ЛДСП имеется огромное разнообразие ламинированных поверхностей.</p>
+                                        <p>- Материал не деформируется в результате механических повреждений.</p>
+                                        <p>- Материал имеет хорошую устойчивость к царапинам. Кроме того, его можно чистить различными химическими средствами.</p>
+                                    </div>
+                                </div>
+                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                            </article>
+                        </div>
+
+                        <div class="accessories-materials__card accessories-materials__card2">
+                            <article>
+                                <div class="accessories-materials__text">
+                                    <div class="accessories-materials__description">
+                                        <div>
+                                            <h3>Мдф</h3>
+                                            <p>- Широкие дизайнерские возможности. Чаще всего МДФ используют как основу,  отделывая пластиком, акрилом, различными типами</p>
+                                        </div>
+                                        <div>
+                                            <img src="img/mdf.jpeg" alt="Мдф">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>пленок. Это позволяет создать яркие уникальные дизайны. Часто гарнитуры из МДФ имитируют натуральное дерево, камень, металл и другие материалы..</p>
+                                        
+                                        <p>-  МФД не капризен и не требует специальных моющих средств. Правда, необходимо учесть, что покрытие может оказаться более требовательным.</p>
+                                    </div>
+                                </div>
+                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                            </article>
+                        </div>
+
+                        <div class="accessories-materials__card accessories-materials__card3">
+                            <article>
+                                <div class="accessories-materials__text">
+                                    <div class="accessories-materials__description">
+                                        <div>
+                                            <h3>Эмаль</h3>
+                                            <p>Все больше у покупателей становятся популярными, кухни с крашенными фасадами. Крашеные кухонные </p>
+                                        </div>
+                                        <div>
+                                            <img src="img/emal.jpeg" alt="Эмаль">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>фасады изготавливают из МДФ, поверхность, которой покрывается эмалью. Специальная краска и финишный слой лака обеспечивают надежную защиту от влаги, загрязнений, температурных колебаний в определенных</p>
+                                    </div>
+                                </div>
+                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                            </article>
+                        </div>
+
+                        <div class="accessories-materials__card accessories-materials__card4">
+                            <article>
+                                <div class="accessories-materials__text">
+                                    <div class="accessories-materials__description">
+                                        <div>
+                                            <h3>фурнитура blum</h3>
+                                        </div>
+                                        <div>
+                                            <img src="img/blum.jpeg" alt="фурнитура blum">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>- Высококачественная австрийская фурнитура для современной мебели. Фурнитура «Блюм» для кухни позволяет:</p>
+                                        <p>-  создавать конструкции повышенной прочности и функциональности;</p>
+                                        <p>-  превращать «мертвые» зоны в полезные;</p>
+                                        <p>-  реализовывать любые дизайнерские задумки.</p>
+                                    </div>
+                                </div>
+                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                            </article>
+                        </div>
+
+                        <div class="accessories-materials__card accessories-materials__card5">
+                            <article>
+                                <div class="accessories-materials__text">
+                                    <div class="accessories-materials__description">
+                                        <div>
+                                            <h3>фурнитура Hettich</h3>
+                                        </div>
+                                        <div>
+                                            <img src="img/hettch.jpeg" alt="фурнитура Hettich">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>– это германская фурнитура с идеальным сочетанием интеллектуальных технологий, функциональности и дизайна. </p>
+                                        <p>- мебельные петли, системы ящиков, фурнитура для складных и раздвижных дверей, подъемные механизмы, соединительная фурнитура, производственная техника, механизмы и наполнение для кухонной мебели</p>
+                                    </div>
+                                </div>
+                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                            </article>
+                        </div>
+
+                        <div class="accessories-materials__card accessories-materials__card6">
+                            <article>
+                                <div class="accessories-materials__text">
+                                    <div class="accessories-materials__description">
+                                        <div>
+                                            <h3>фурнитура BOYARD</h3>
+                                        </div>
+                                        <div>
+                                            <img src="img/boyard.jpeg" alt="фурнитура BOYARD">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Передовые технологические разработки, позволяющие выпускать качественные изделия по доступной цене. </p>
+                                        <p>Производство продукции в соответствии с международными стандартами качества. Широкий ассортимент актуальной фурнитуры для мебели и интерьеров различных стилевых направлений, разнообразные по формам, размерам, типу покрытий и назначению.</p>
+                                    </div>
+                                </div>
+                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                            </article>
+                        </div>
+                    </section>
+                </section>
+            </div>
+
+
+
+            <div class="kithen-description">
+                <section class="container kithen-description__container">
+                    <article class="kitchens-to-order">
+                        <div class="wow animate__animated animate__fadeInLeft animate__delay-0.7s">
+                            <h3>Кухни на заказ</h3>
+                            <p>Красивые, удобные и современные, кухни на заказ помогают создавать атмосферу уюта и комфорта в помещении. Вы хотите воплотить в жизнь мечты об удобном гарнитуре? Мы готовы вам в этом помочь. Наша компания успешно работает в Нижневартовске с 2015 года. Вся мебель изготавливается на современном оборудовании. Если вы хотите купить кухню на заказ, мы предложим наиболее рациональное решение и сумеем уложиться в планируемый вами бюджет. Компания «Кухни Микс» предлагает готовую продукцию и разработку индивидуальных проектов кухонь. Опытные дизайнеры могут создать эксклюзивные решения для кухонных пространств любой площади и конфигурации. Мы готовы работать в рассрочку. Все документы оформляются официально. Хотите приобрести кухню в кредит? Мы предложим лучшие условия от банков-партнеров.</p>
+                        </div>
+                        <img class="wow animate__animated animate__fadeInRight animate__delay-0.7s" src="img/kitchen1.jpeg" alt="kitchen image">
+                    </article>
+
+                    <article class="delivery-terms">
+                        <div class="wow animate__animated animate__fadeInRight animate__delay-0.7s">
+                            <h3>Условия доставки и сборки</h3>
+                            <p>При покупке кухни под заказ, вы получаете не только цену от производителя, но и доставку, а также профессиональную сборку и установку гарнитура в интерьере. Доставка и сборка оплачиваются отдельно, стоимость зависит от удаленности и сложности сборки.Кроме того, созданные по индивидуальным размерам, модули требуют правильного размещения в пространстве. В этом случае справиться со сборкой и установкой самостоятельно будет довольно трудно. Обращение к специалистам дает возможность не только заказать на выгодных условиях хорошие кухни, но и смонтировать их в течение всего одного рабочего дня, недорого и быстро.</p>
+                        </div>
+                        <img class="wow animate__animated animate__fadeInLeft animate__delay-0.7s" src="img/kitchen2.jpeg" alt="kitchen image">
+                    </article>
+
+                    <article class="kitchen-designer">
+                        <div class="wow animate__animated animate__fadeInLeft animate__delay-0.7s">
+                            <h3>Конструктор кухни онлайн</h3>
+                            <p>Официальный сайт компании «Кухни Микс»  предлагает создание онлайн-визуализации вашего будущего гарнитура. Выбирайте оптимальную комплектацию, размеры и другие параметры, не выходя из дома. Настраивайте цветовую гамму, расположение элементов, тип и орнамент столешницы, чтобы увидеть итоговый результат. Также на сайте есть интернет-магазин с готовыми решениями. Стоимость самого бюджетного варианта будет по карману человеку практически с любым уровнем достатка. Выбирайте, и заказывайте их прямо на сайте.</p>
+                        </div>
+                        <img class="wow animate__animated animate__fadeInRight animate__delay-0.7s" src="img/kitchen3.jpeg" alt="kitchen image">
+                    </article>
+                </section>
+            </div>
+
+
+            <p id="caption1" class="caption">Кухня с центральным островом, плитой и микроволновой печью на центральном острове, яркая цветовая гамма, направление декоративно-прикладного искусства</p>
+            <p id="caption2" class="caption">Кухня с большой белой столешницей и духовкой в ​​углу комнаты, вазой с цветами на стойке, цифровой рендеринг, свет и пространство, мелко детализированные детали</p>
+            <p id="caption3" class="caption">Кухня с большим островом и лампой-кактусом на столешнице перед ней и окном, 3D-рендеринг, современная европейская живопись тушью</p>
+            <p id="caption4" class="caption">Кухня с центральным островом, плитой и микроволновой печью на центральном острове, яркая цветовая гамма, направление декоративно-прикладного искусства</p>
+            <p id="caption5" class="caption">Кухня с большой белой столешницей и духовкой в ​​углу комнаты, вазой с цветами на стойке, цифровой рендеринг, свет и пространство, мелко детализированные детали</p>
+            <p id="caption6" class="caption">Кухня с большим островом и лампой-кактусом на столешнице перед ней и окном, 3D-рендеринг, современная европейская живопись тушью</p>
+
+            <div class="our-works">
+                <section class="container">
+                    <h3><span>Наши</span> работы</h3>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="swiper-gallery">
+                            <a href="img/img1big.jpeg" class="swiper-slide" data-sub-html="#caption1">
+                                <img src="img/img1.jpeg"/>
+                            </a>
+                            <a href="img/img2big.jpeg" class="swiper-slide" data-sub-html="#caption2">
+                                <img src="img/img2.jpeg"/>
+                            </a>
+                            <a href="img/img3big.jpeg" class="swiper-slide" data-sub-html="#caption3">
+                                <img src="img/img3.jpeg"/>
+                            </a>
+                            <a href="img/img1big.jpeg" class="swiper-slide" data-sub-html="#caption4">
+                                <img src="img/img1.jpeg"/>
+                            </a>
+                            <a href="img/img2big.jpeg" class="swiper-slide" data-sub-html="#caption5">
+                                <img src="img/img2.jpeg"/>
+                            </a>
+                            <a href="img/img3big.jpeg" class="swiper-slide" data-sub-html="#caption6">
+                                <img src="img/img3.jpeg"/>
+                            </a>
+                        </div>
+                        <div class="swiper-button-prev"><img src="img/prev-btn.png" alt="prev button"></div>
+                        <div class="swiper-button-next"><img src="img/next-btn.png" alt="next button"></div>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <section class="consultation-content">
+                <div class="content-wrapper">
+                    <form action="#" method="post" class="consultation-content__form">
+                        <h2><span>Проконсультируем</span> по любым вопросам</h2>
+                        <div class="inputs-data">
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="number" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Кратко опишите ваш вопрос" required></textarea>
+                        <div class="get-consultation">
+                                <input type="submit" value="Получить консультацию">
+                            <p><a href="https://policies.google.com/privacy" target="_blank">Нажимая кнопку "Получить консультацию" вы даете согласие на обработку персональных данных в соответствии с политикой конфиденциальности</a></p>
+                        </div>
+                    </form>
+                    <div>
+                        <img src="img/consultation.png" alt="kitchen image">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <footer class="footer">
+            <section class="container">
+                <div class="footer__content">
+                    <div class="footer-address">
+                        <img src="img/ktichen-lgogo.png" alt="kitchen logo">
+                        <div>
+                            <p>г. Нижневартовск,</p>
+                            <p>ул. Индустриальная, д.7 стр. 1</p>
+                            <p>ТЦ “ВДНХ”, 2 этаж</p>
+                            <p>бутик № 20а</p>
+                        </div>
+                    </div>
+                    <ul class="footer__description-list">
+                        <li class="title-list"><a href="">Разделы:</a></li>
+                        <li><a href="">Каталог товаров</a></li>
+                        <li><a href="">Кухонные модули</a></li>
+                        <li><a href="">Декоры МДФ/Лдсп</a></li>
+                        <li><a href="">Готовые решения</a></li>
+                    </ul>
+                    <div class="more-info">
+                        <div>
+                            <h4>Контакты:</h4>
+                            <div class="footer-mail">
+                                <img src="img/mail.svg" alt="main">
+                                <p>uhninv@mail.ru</p>
+                            </div>
+                            <div class="footer-phone">
+                                <a href="tel:8(3466)682015"><img src="img/phone.svg" alt="call us"></a>
+                                <a href="tel:8(3466)682015">8 (3466) 68-20-15</a>
+                            </div>
+                            <div>
+                                <a href="tel:8(3466)681598" class="second-tel">8 (3466) 68-15-98</a>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="wk">
+                                <img src="img/wk.svg" alt="wk">
+                                <a href="#">vk.com/kuhninv</a>
+                            </div>
+                            <div class="ok">
+                                <img src="img/ok.svg" alt="ok">
+                                <a href="#">ok.ru/kuhninv</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+    <!-- lightGallery -->
+    <script src="lightgallery-js/lightgallery.min.js"></script>
+    <script src="lightgallery-js/lg-thumbnail.min.js"></script>
+
+    <script>
+        lightGallery(document.getElementById('swiper-gallery'))
+    </script>
+</body>
+</html>

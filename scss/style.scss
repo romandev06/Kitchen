@@ -1,0 +1,172 @@
+// Переменные, Шаблоны, Миксины
+
+$white: white;
+$black: black;
+$dark: rgb(51, 51, 51);
+$gray: rgb(176, 176, 176);
+$input-color: rgb(176, 176, 176);
+$yellow: rgb(251, 216, 70);
+$greeen :rgb(153, 203, 56);
+
+%flexPosition {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+%footer {
+    background-color: rgb(51, 51, 51);
+}
+
+%regular {
+    font-family: 'Montserrat-regular';
+}
+
+%medium {
+    font-family: 'Montserrat-medium';
+}
+
+%semibold {
+    font-family: 'Montserrat-semibold';
+}
+
+%bold {
+    font-family: 'Montserrat-bold';
+}
+
+%extrabold {
+    font-family: 'Montserrat-extrabold';
+}
+
+@mixin text($fz, $fw, $lh) {
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin calculateCost($w, $h, $fz, $fw, $lh, $col, $brrad, $bxshd, $backimg) {
+    width: $w;
+    height: $h;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $col;
+    border-radius: $brrad;
+    box-shadow: $bxshd;
+    background-image: $backimg;
+}
+
+@mixin accessoriesMaterialsCards($w, $bxshd, $bgcol, $padd) {
+    width: $w;
+    box-shadow: $bxshd;
+    background-color: $bgcol;  
+    padding: $padd;
+}
+
+
+@mixin findTheCostButton($w, $padd, $brrad, $bxshd, $bgcol) {
+    width: $w;
+    padding: $padd;
+    border-radius: $brrad;
+    box-shadow: $bxshd;
+    background-image: $bgcol;  
+}
+
+
+
+// Переменные, Шаблоны, Миксины
+
+
+
+
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+* {
+    @extend %regular;
+}
+
+.overflow-y {
+    overflow-y: hidden;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1 1 auto;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+@import 'sections/header';
+@import 'sections/main';
+@import 'sections/footer';

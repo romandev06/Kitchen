@@ -1,0 +1,30 @@
+.header {
+    background-color: #FBD846;
+    padding: 14px 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        .address,
+        .phone {
+            @extend %flexPosition;
+        }
+
+        .address {
+            p {
+                @include text(14px, 400, 17px)
+            }
+        }
+
+        .phone {
+            > a {
+                @include text(16px, 600, 20px);
+                color: $black;
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,113 @@
+.footer {
+    @extend %footer;
+    padding: 25px 0;
+
+    &__content {
+        @extend %flexPosition;
+        justify-content: center;
+        gap: 130px;
+
+        .footer-address {
+            p {
+                @include text(16px, 400, 20px);
+                color: $white;
+            }
+
+            img {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .more-info {
+        display: flex;
+        gap: 80px;
+        align-self: flex-start;
+
+        p {
+            @include text(16px, 400, 20px);
+            color: $white;
+            font-weight: 400;
+        }
+
+        h4 {
+            color: rgb(129, 129, 129);
+            @include text(20px, 600, 24px);
+        }
+
+        .footer-phone {
+            margin-bottom: 16px;
+        }
+
+        .second-tel {
+            margin-left: 33px;
+        }
+    }
+
+    .footer-mail,
+    .footer-phone,
+    .wk,
+    .ok {
+        @extend %flexPosition;
+    }
+
+    &__description-list {
+        @extend %flexPosition;
+        flex-direction: column;
+        gap: 25px;
+
+        & .title-list a {
+            color: rgb(129, 129, 129);
+            @include text(20px, 600, 24px);
+        }
+
+        li {
+            color: $white;
+
+            a {
+                @include text(16px, 400, 20px);
+                color: $white;
+                transition: all 0.2s linear;
+
+                &:hover {
+                    color: rgb(153, 203, 56);
+                }
+            }
+        }
+    }
+
+    .feedback {
+        @extend %flexPosition;
+    }
+
+    .social-media {
+        margin-top: 50px;
+    }
+
+    .footer-mail {
+        margin-top: 30px;
+    }
+
+    .footer-phone,
+    .ok {
+        margin-top: 16px;
+    }
+
+    .footer-phone{
+        a {
+            transition: all 0.2s linear;
+
+            &:hover {
+                color: rgb(153, 203, 56);
+            }
+        }
+    }
+
+    .second-tel {
+        transition: all 0.2s linear;
+
+            &:hover {
+                color: rgb(153, 203, 56);
+            }
+    }
+}

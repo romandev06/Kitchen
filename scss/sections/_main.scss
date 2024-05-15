@@ -1,0 +1,691 @@
+.main-nav {
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    padding: 18px 0;
+
+    &__content {
+        @extend %flexPosition;
+
+        img {
+            padding-right: 20px;
+        }
+
+        ul {
+            @extend %flexPosition;
+            gap: 20px;
+
+            li a {
+                color: $dark;
+                @include text(14px, 600, 17px);
+                @extend %semibold;
+                transition: all 0.2s linear;
+
+                &:hover {
+                    color: rgb(153, 203, 56);
+                }
+            }
+        }
+
+        > a {
+            border: 1px solid rgb(251, 216, 70);
+            border-radius: 30px;
+            box-shadow: 2px 2px 4px 0px rgba(255, 216, 111, 0.4);
+            @include text(16px, 700, 20px);
+            color: $dark;
+            padding: 17px 0;
+            width: 195px;
+            text-align: center;
+            margin-left: 6px;
+        }
+    }
+}
+
+
+
+
+
+.kitchen-price {
+
+    &__content {
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+
+        .kitchen-info {
+            margin-top: 55px;
+        }
+
+        .kitchen-title {
+            width: 507px;
+            @include text(35px, 700, 43px);
+            color: $dark;
+
+            span {
+                color: rgb(251, 216, 70);
+            }
+        }
+
+        .kitchen-description-text {
+            width: 507px;
+            @include text(18px, 400, 22px);
+            margin: 10px 0 70px 0;
+        }
+
+        .kitchen-bg {
+            background-image: url(../img/kitchen-from-nizhnevartovsk.jpeg);
+            background-repeat: no-repeat;
+            width: 838px;
+            height: 682px;
+            background-size: cover;
+        }
+
+        .benefits-container-1 {
+            display: flex;
+
+            .benefit-1,
+            .benefit-2 {
+                @extend %flexPosition;
+                width: 260px;
+            }
+
+            .benefit-2 {
+                width: 350px;
+            }
+        }
+
+        .benefits-container-2 {
+            display: flex;
+
+            .benefit-3,
+            .benefit-4 {
+                @extend %flexPosition;
+                width: 260px;
+                margin: 65px 0 38px 0;
+            }
+
+            .benefit-4 {
+                width: 350px;
+            }
+        }
+
+        .calculate-cost {
+            @extend %flexPosition;
+            gap: 30px;
+
+            button {
+                @include calculateCost(356px, 63px, 20px, 700, 24px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%,rgb(255, 232, 136) 99.972%));
+                cursor: pointer;
+                transition: all 0.2s linear;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+
+        .kitchen-gift {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+
+            p {
+                width: 242px;
+                @include text(15px, 400, 18px);
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.quiz {
+    background-image: linear-gradient(90.00deg, rgb(255, 228, 114),rgb(248, 204, 85) 100%,rgb(251, 216, 70) 100%);
+    // height: 800px;
+    padding: 62px 0;
+
+
+    .quiz-importaint-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 24px 0;
+        background-color: $white;
+        margin-bottom: 42px;
+    }
+
+    .quiz-title {
+        @include text(28px, 800, 35px);
+        text-transform: uppercase;
+        font-family: 'Montserrat-extrabold';
+        color: $dark;
+
+        span {
+            color: $yellow;
+            font-family: 'Montserrat-extrabold';
+        }
+    }
+
+    .get-gift {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        @include text(20px, 300, 30px);
+        color: $dark;
+    }
+
+
+
+
+
+    .quiz-slider {
+        background-color: $white;
+
+        .swiper-slide__quiz1 {
+            display: flex;
+            align-items: center;
+            gap: 34px;
+
+            img {
+                width: 620px;
+                height: 560px;
+            }
+        }
+
+
+        .quiz-line {
+            width: 61px;
+            border: 3px solid rgb(251, 216, 70);
+        }
+
+        .find-cost__btn {
+            @include findTheCostButton (253px, 16px, 30px, 0px 4px 4px 0px rgba(248, 204, 85, 0.25), linear-gradient(268.28deg, rgb(248, 204, 85) 0.064%,rgb(255, 221, 129) 99.899%));
+            color: $dark;
+            @include text(20px, 500, 24px);
+            cursor: pointer;
+            transition: all 0.3s linear;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+
+        .quiz-contenst {
+            text-transform: uppercase;
+
+            h3 {
+                @include text(22px, 800, 29px);
+                font-family: 'Montserrat-extrabold';
+                margin-top: 20px;
+            }
+
+            p {
+                margin: 20px 0 30px 0;
+                @include text(18px, 500, 22px);
+                font-family: 'Montserrat-medium';
+
+                span {
+                    color: rgb(153, 203, 56);
+                    font-family: 'Montserrat-medium';
+                }
+            }
+        }
+
+        .swiper-pagination-fraction {
+            @include text(22px, 600, 27px);
+            margin: 0 0 500px 500px;
+            z-index: -1;
+        }
+
+        .swiper-pagination-current {
+            color: $yellow;
+        }
+
+        .swiper-slide__quiz2 {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            text-align: center;
+            margin-top: 73px;
+        }
+
+        .quiz-card {
+            border: 4px solid rgb(230, 230, 230);
+            border-radius: 10px;
+            transition: all 0.3s linear;
+        }
+
+        .quiz-section2 {
+
+            h2 {
+                @include text(27px, 800, 27px);
+                @extend %extrabold;
+                text-align: center;
+                margin-top: 40px;
+
+                span {
+                    color: $yellow;
+                    @extend %extrabold;
+                }
+            }
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            display: none;
+        }
+
+        .swiper-button-next__quiz {
+            border-radius: 30px;
+            box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
+            background-image: linear-gradient(268.28deg, rgb(248, 204, 85) 0.1%,rgb(255, 221, 129) 99.844%);
+            width: 170px;
+            height: 50px;
+            cursor: pointer;
+            color: $dark;
+            @include text(20px, 500, 24px);
+            margin: 210px 20px 0 0;
+        }
+
+        .mySwiper-quiz {
+            position: relative;
+        }
+
+        .swiper-button-prev__quiz {
+            top: var(--swiper-navigation-top-offset, 93%);
+            left: var(--swiper-navigation-sides-offset,887px)
+        }
+
+        .quiz-card__select {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 18px 0 30px 0;
+
+            h4 {
+                @include text(24px, 900, 24px);
+                @extend %extrabold;
+            }
+
+            input[type="radio"] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                width: 30px;
+                height: 30px;
+                box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.148);
+                background: rgb(255, 255, 255);
+                border-radius: 15px;
+                position: relative;
+                right: 25px;
+            }
+
+            input[type="radio"]:checked {
+                background-color: $yellow;
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+
+    .hidden-quiz__btn {
+        display: none;
+    }
+
+    .quiz-card__select-style {
+        border: 4px solid rgb(251, 216, 70) !important;
+        border-radius: 10px !important;
+    }
+
+
+
+
+    .mini-benefits__title {
+        width: 360px;
+        background-color: $white;
+        padding: 22px 8px;
+        font-family: 'Montserrat-extrabold';
+        @include text(28px, 900, 30px);
+        text-transform: uppercase;
+        color: $black;
+        margin: 36px auto;
+        text-align: center;
+
+        span {
+            color: $greeen;
+            font-family: 'Montserrat-extrabold';
+        }
+    }
+
+
+
+    .mini-benefits {
+        display: grid;
+        grid-template-columns: repeat(4, 263px);
+        gap: 30px;
+
+        h3 {
+            text-transform: uppercase;
+            @include text(20px, 600, 24px);
+            color: $dark;
+            position: absolute;
+            bottom: 70px;
+            width: 240px;
+        }
+
+        p {
+            @include text(14px, 400, 17px);
+            color: $dark;
+            position: absolute;
+            bottom: 20px;
+            width: 240px;
+        }
+
+        .benefits {
+            width: 263px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+            background: $white;
+            padding: 30px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            height: 263px;
+        }
+
+        .benefits-2 {
+
+            h3 {
+                bottom: 90px;
+            }
+        }
+    }
+}
+
+
+.accessories-materials {
+    padding: 95px 0 115px 0;
+
+    &__card {
+        @include accessoriesMaterialsCards(360px, 5px 5px 10px 0px rgba(0, 0, 0, 0.1), $white, 20px 20px 25px 20px);
+        position: relative;
+        min-height: 400px;
+
+        p {
+            @include text(12px, 400, 15px);
+            padding-top: 17px;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .accessories-materials-cards__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        gap: 30px;
+    }
+
+    &__description {
+        display: flex;
+        align-items: center;
+
+        h3 {
+            text-transform: uppercase;
+            @include text(20px, 700, 24px);
+            @extend %bold;
+            margin-bottom: 13px;
+        }
+    }
+
+    .calculate-cost__btn {
+        @include calculateCost(320px, 40px, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%,rgb(255, 232, 136) 99.972%));
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        transition: all 0.2s linear;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    h2 {
+        @include text(28px, 800, 30px);
+        text-align: center;
+        text-transform: uppercase;
+        @extend %extrabold;
+        color: $dark;
+        margin-bottom: 63px;
+
+        span {
+            color: $yellow;
+        }
+    }
+
+
+    .accessories-materials__card2 {
+        p {
+            padding-top: 9px;
+        }
+    }
+
+    .accessories-materials__card3 {
+        p {
+            padding-top: 0;
+        }
+    }
+
+    .accessories-materials__card4 {
+        p {
+            margin-top: 5px;
+        }
+
+        .accessories-materials__description {
+            margin-bottom: 20px;
+        }
+    }
+
+    .accessories-materials__card5 {
+        p {
+            margin-top: 5px;
+        }
+
+        .accessories-materials__description {
+            margin-bottom: 20px;
+        }
+    }
+
+    .accessories-materials__card6 {
+        p {
+            margin-top: 5px;
+        }
+
+        .accessories-materials__description {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+
+.kithen-description {
+    margin: 110px 0 110px 0;
+
+    .kithen-description__container {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .kitchens-to-order,
+    .delivery-terms,
+    .kitchen-designer {
+        @extend %flexPosition;
+        gap: 30px;
+
+        h3 {
+            @include text(28px, 900, 30px);
+            margin-bottom: 29px;
+        }
+
+        p {
+            @include text(18px, 400, 30px);
+            width: 750px;
+        }
+    }
+
+    .delivery-terms {
+
+        h3, p {
+            text-align: right;
+        }
+
+        img {
+            order: -1;
+        }
+    }
+}
+
+
+
+#caption1,
+#caption2,
+#caption3,
+#caption4,
+#caption5,
+#caption6 {
+    display: none;
+}
+
+
+.our-works {
+    background-color: rgb(251, 216, 70);
+    padding: 35px 0 42px 0;
+
+    h3 {
+        @include text(28px, 900, 30px);
+        text-transform: uppercase;
+        color: $white;
+        @extend %extrabold;
+        margin-bottom: 56px;
+        text-align: center;
+
+        span {
+            color: $dark;
+            @extend %extrabold;
+        }
+    }
+
+    .swiper-slide {
+        width: 350px;
+        height: 350px;
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+        display: none;
+    }
+}
+
+
+
+
+
+.consultation-content {
+    background-color: rgb(38, 38, 38);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .content-wrapper {
+        @extend %flexPosition;
+        gap: 40px;
+        padding: 48px 0 60px 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+            padding: 12px 22px 15px 22px;
+            border: 1px solid rgb(176, 176, 176);
+            border-radius: 20px;
+            @include text(20px, 400, 24px);
+            width: 360px;
+            background-color: transparent;
+            color: $white;
+        }
+
+        .inputs-data {
+            @extend %flexPosition;
+            gap: 30px;
+        }
+
+        textarea {
+            width: 750px;
+            height: 110px;
+            background-color: transparent;
+            border: 1px solid rgb(176, 176, 176);
+            border-radius: 20px;
+            padding: 21px;
+            @include text(20px, 400, 24px);
+            color: $white;
+        }
+
+        h2, span {
+            @include text(28px, 800, 34px);
+            @extend %extrabold;
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        span {
+            color: rgb(153, 203, 56);
+        }
+    }
+
+    .get-consultation {
+        @extend %flexPosition;
+        gap: 30px;
+
+        input {
+            border-radius: 30px;
+            box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+            background: linear-gradient(268.28deg, rgb(251, 216, 70) 0.032%,rgb(255, 232, 136) 99.95%);
+            color: $dark;
+            @include text(20px, 700, 24px);
+            cursor: pointer;
+            transition: all 0.2s linear;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        p {
+            width: 360px;
+
+            a {
+                color: $gray;
+                transition: all 0.2s linear;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
