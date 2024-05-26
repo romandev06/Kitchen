@@ -16,7 +16,7 @@ const swiper = new Swiper(".mySwiper", {
     },
 });
 
-// wdeewdewdewdwdwedewd
+
 
 
 // Auto text
@@ -68,15 +68,18 @@ const quizSwiper = new Swiper(".mySwiper-quiz", {
     on: {
         slideChange: function () {
             if (this.activeIndex === 0) {
-                document.querySelector('.swiper-button-next__quiz').classList.toggle('hidden-quiz__btn');
-                document.querySelector('.swiper-button-prev__quiz').classList.toggle('hidden-quiz__btn');
+                document.querySelector('.swiper-button-next__quiz').classList.add('hidden-quiz__btn');
+                document.querySelector('.swiper-button-prev__quiz').classList.remove('hidden-quiz__btn');
+            } else if (this.activeIndex === (this.slides.length - 1)) {
+                document.querySelector('.swiper-button-next__quiz').classList.add('hidden-quiz__btn');
+                document.querySelector('.swiper-button-prev__quiz').classList.remove('hidden-quiz__btn');
             } else {
-                document.querySelector('.swiper-button-next__quiz').classList.toggle('hidden-quiz__btn');
-                document.querySelector('.swiper-button-prev__quiz').classList.toggle('hidden-quiz__btn');
+                document.querySelector('.swiper-button-next__quiz').classList.remove('hidden-quiz__btn');
+                document.querySelector('.swiper-button-prev__quiz').classList.remove('hidden-quiz__btn');
             }
         },
-    },
-});
+    }
+})
 
 
 
@@ -100,3 +103,14 @@ quizRadioButtons.forEach(button => {
     })
 })
 
+
+
+
+
+// output values
+
+function changeValue(value, index) {
+    const outputs = document.querySelectorAll('.kitchen-size__output');
+
+    outputs[index].textContent = value;
+}

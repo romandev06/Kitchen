@@ -267,6 +267,7 @@
                 @extend %extrabold;
                 text-align: center;
                 margin-top: 40px;
+                text-transform: uppercase;
 
                 span {
                     color: $yellow;
@@ -278,18 +279,6 @@
         .swiper-button-prev:after,
         .swiper-button-next:after {
             display: none;
-        }
-
-        .swiper-button-next__quiz {
-            border-radius: 30px;
-            box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-            background-image: linear-gradient(268.28deg, rgb(248, 204, 85) 0.1%,rgb(255, 221, 129) 99.844%);
-            width: 170px;
-            height: 50px;
-            cursor: pointer;
-            color: $dark;
-            @include text(20px, 500, 24px);
-            margin: 210px 20px 0 0;
         }
 
         .mySwiper-quiz {
@@ -331,7 +320,124 @@
                 height: 27px;
             }
         }
+
+        .quiz-section3 {
+
+        .swiper-slide__quiz3 {
+            display: flex;
+            align-items: center;
+            gap: 130px;
+
+        .kitchen-form-size {
+            display: flex;
+            flex-direction: column;
+
+        section {
+            width: 404px;
+            height: 67px;
+            margin: 15px 0;
+
+            .label-card-size {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 15px 0;
+
+                label {
+                    color: rgb(34, 34, 34);
+                    @include text(20px, 700, 24px);
+                }
+
+                output {
+                    border: 1px solid rgb(198, 198, 198);
+                    border-radius: 40px;
+                    padding: 6px 18px;
+                    @include text(18px, 600, 22px);
+                }
+            }
+
+                .label-card-size2,
+                .label-card-size3 {
+                    margin-top: 15px;
+                }
+
+                input {
+                    -webkit-appearance: none;
+                    width: 404px;
+                    height: 4px;
+                    background-color: rgb(220, 220, 220);
+
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        width: 20px;
+                        height: 20px;
+                        box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.04);
+                        border: 3px solid white;
+                        background-color: rgb(251, 216, 70);
+                        padding: 3px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
     }
+}
+
+.swiper-slide4 {
+
+    h2 {
+        @include text(22px, 800, 27px);
+    }
+
+    .choose-variant__kichen {
+        @include text(20px, 300, 30px);
+        text-align: center;
+        margin: 28px 0 57px 0;
+    }
+
+    .choose-container__kitchen {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    .quiz-card__select-choose {
+        position: relative;
+
+        input[type="radio"] {
+            position: absolute;
+            top: 1px;
+            left: 15px;
+            z-index: 5;
+        }
+    }
+
+    .choose-card,
+    .choose-card__mini {
+        width: 220px;
+        height: 250px;
+        position: relative;
+
+        img {
+            height: 250px;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+}
+
+.swiper-button-next__quiz {
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
+    background-image: linear-gradient(268.28deg, rgb(248, 204, 85) 0.1%,rgb(255, 221, 129) 99.844%);
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+    color: $dark;
+    @include text(20px, 500, 24px);
+    margin: 210px 20px 0 0;
+}
 
     .hidden-quiz__btn {
         display: none;
