@@ -24,6 +24,10 @@
   font-family: "Montserrat-regular";
 }
 
+.quiz .quiz-slider .swiper-slide4 .choose-card__thing {
+  font-family: "Montserrat-medium";
+}
+
 .main-nav__content ul li a {
   font-family: "Montserrat-semibold";
 }
@@ -472,8 +476,8 @@ main {
 }
 .quiz .quiz-slider .quiz-card__select input[type=radio]:checked {
   background-color: rgb(251, 216, 70);
-  width: 27px;
-  height: 27px;
+  width: 26px;
+  height: 26px;
 }
 .quiz .quiz-slider .quiz-section3 .swiper-slide__quiz3 {
   display: -webkit-box;
@@ -586,6 +590,13 @@ main {
   height: 250px;
   position: absolute;
   top: 0;
+}
+.quiz .quiz-slider .swiper-slide4 .choose-card__thing {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 18px;
 }
 .quiz .swiper-button-next__quiz {
   border-radius: 30px;
