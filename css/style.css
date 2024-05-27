@@ -338,6 +338,10 @@ main {
 }
 .quiz .quiz-slider {
   background-color: white;
+  -webkit-user-select: auto !important;
+     -moz-user-select: auto !important;
+      -ms-user-select: auto !important;
+          user-select: auto !important;
 }
 .quiz .quiz-slider .swiper-slide__quiz1 {
   display: -webkit-box;
@@ -598,6 +602,61 @@ main {
   text-align: center;
   margin-top: 18px;
 }
+.quiz .quiz-slider .swiper-slide5 h2 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 27px;
+  margin-bottom: 130px;
+}
+.quiz .quiz-slider .swiper-slide5 .kitchen-budget__card {
+  display: grid;
+  grid-template-columns: repeat(2, 457px);
+  place-content: center;
+  -webkit-column-gap: 31px;
+     -moz-column-gap: 31px;
+          column-gap: 31px;
+  row-gap: 51px;
+  width: 945px;
+  margin: 0 auto;
+}
+.quiz .quiz-slider .swiper-slide5 .kitchen-budget__card input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.148);
+          box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.148);
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.quiz .quiz-slider .swiper-slide5 .kitchen-budget__card input[type=radio]:checked {
+  background-color: rgb(251, 216, 70);
+  width: 20px;
+  height: 20px;
+}
+.quiz .quiz-slider .swiper-slide5 .kitchen-budget__card p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: none;
+}
+.quiz .quiz-slider .swiper-slide5 .kitchen-budget__card .choose-container__kitchen-budget {
+  width: 945px !important;
+  margin: 0 auto !important;
+}
+.quiz .quiz-slider .swiper-slide5 .kitchen-budget__card-into {
+  width: 415px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 30px;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
 .quiz .swiper-button-next__quiz {
   border-radius: 30px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
@@ -611,6 +670,11 @@ main {
   font-weight: 500;
   line-height: 24px;
   margin: 210px 20px 0 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.quiz .swiper-button-next__quiz:hover {
+  opacity: 0.7;
 }
 .quiz .hidden-quiz__btn {
   display: none;
@@ -954,6 +1018,20 @@ main {
 }
 .consultation-content .get-consultation p a:hover {
   color: white;
+}
+
+.kitchen-budget__card-into__active {
+  width: 415px;
+  border: 1px solid rgb(251, 216, 70);
+  border-radius: 30px;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
 }
 
 .footer {

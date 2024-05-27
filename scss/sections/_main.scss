@@ -184,6 +184,7 @@
 
     .quiz-slider {
         background-color: $white;
+        user-select: auto !important;
 
         .swiper-slide__quiz1 {
             display: flex;
@@ -432,6 +433,60 @@
         @extend %medium;
     }
 }
+
+.swiper-slide5 {
+
+    h2 {
+        @include text(22px, 800, 27px);
+        margin-bottom: 130px;
+    }
+
+    .kitchen-budget__card {
+        display: grid;
+        grid-template-columns: repeat(2, 457px);
+        place-content: center;
+        column-gap: 31px;
+        row-gap: 51px;
+        width: 945px;
+        margin: 0 auto;
+
+        input[type="radio"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 30px;
+            height: 30px;
+            box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.148);
+            background: rgb(255, 255, 255);
+            border-radius: 15px;
+        }
+
+        input[type="radio"]:checked {
+            background-color: $yellow;
+            width: 20px;
+            height: 20px;
+        }
+
+        p {
+            @include text(16px, 500, none);
+        }
+
+        .choose-container__kitchen-budget {
+            width: 945px !important;
+            margin: 0 auto !important;
+        }
+    }
+
+    .kitchen-budget__card-into {
+        width: 415px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 30px;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}
 }
 
 .swiper-button-next__quiz {
@@ -444,6 +499,11 @@
     color: $dark;
     @include text(20px, 500, 24px);
     margin: 210px 20px 0 0;
+    transition: all 0.2s linear;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
     .hidden-quiz__btn {
@@ -801,4 +861,14 @@
             }
         }
     }
+}
+
+.kitchen-budget__card-into__active {
+    width: 415px;
+    border: 1px solid rgb(251, 216, 70);
+    border-radius: 30px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }

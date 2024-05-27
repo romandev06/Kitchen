@@ -68,11 +68,9 @@ const quizSwiper = new Swiper(".mySwiper-quiz", {
     on: {
         slideChange: function () {
             if (this.activeIndex === 0) {
-                document.querySelector('.swiper-button-next__quiz').classList.add('hidden-quiz__btn');
-                document.querySelector('.swiper-button-prev__quiz').classList.remove('hidden-quiz__btn');
-            } else if (this.activeIndex === (this.slides.length - 1)) {
-                document.querySelector('.swiper-button-next__quiz').classList.add('hidden-quiz__btn');
-                document.querySelector('.swiper-button-prev__quiz').classList.remove('hidden-quiz__btn');
+                document.querySelector('.swiper-button-next__quiz').classList.remove('hidden-quiz__btn');
+                document.querySelector('.swiper-button-prev__quiz').classList.add('hidden-quiz__btn');
+                
             } else {
                 document.querySelector('.swiper-button-next__quiz').classList.remove('hidden-quiz__btn');
                 document.querySelector('.swiper-button-prev__quiz').classList.remove('hidden-quiz__btn');
@@ -94,17 +92,10 @@ quizRadioButtons.forEach(button => {
     button.addEventListener('click', () => {
         cards.forEach(card => {
             let currentBtn = button.getAttribute('data-radio-btn')
-            if (card.id === currentBtn) {
-                card.classList.add('quiz-card__select-style')
-            } else {
-                card.classList.remove('quiz-card__select-style')
-            }
+            card.id === currentBtn ? card.classList.add('quiz-card__select-style') : card.classList.remove('quiz-card__select-style')
         })
     })
 })
-
-
-
 
 
 // output values
@@ -114,3 +105,23 @@ function changeValue(value, index) {
 
     outputs[index].textContent = value;
 }
+
+
+
+
+
+
+const budgetCards = document.querySelectorAll('.kitchen-budget__card-into');
+const budgetButtons = document.querySelectorAll('.quiz-budget-radio');
+
+budgetButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        let buttonAttribute = button.getAttribute('data-budget-card');
+
+        budgetCards.forEach(card => {
+            console.log(budgetCards[card])
+        });
+    });
+});
+
+// не решил проблему
