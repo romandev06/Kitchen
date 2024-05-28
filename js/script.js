@@ -109,19 +109,18 @@ function changeValue(value, index) {
 
 
 
+// const budgetCards = document.querySelectorAll('.kitchen-budget__card-into')
+// const budgetButtons = document.querySelectorAll('.quiz-budget-radio')
 
 
-const budgetCards = document.querySelectorAll('.kitchen-budget__card-into');
-const budgetButtons = document.querySelectorAll('.quiz-budget-radio');
+// budgetButtons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         budgetCards.forEach(card => {
+//             let currentBtn = button.getAttribute('data-budget-card')
+//             card.id === currentBtn ? card.classList.add('kitchen-budget__card-into__active') : card.classList.remove('kitchen-budget__card-into__active')
+//         })
+//     })
+// })
 
-budgetButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        let buttonAttribute = button.getAttribute('data-budget-card');
-
-        budgetCards.forEach(card => {
-            console.log(budgetCards[card])
-        });
-    });
-});
 
 // не решил проблему
