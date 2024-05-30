@@ -697,12 +697,15 @@ main {
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application {
   width: 360px;
+  margin-top: 82px;
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application h3 {
   font-size: 20px;
   font-weight: 800;
   line-height: 35px;
   text-wrap: balance;
+  text-align: center;
+  text-transform: uppercase;
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application form {
   display: -webkit-box;
@@ -729,6 +732,7 @@ main {
   gap: 20px;
   padding: 0 23px;
   margin-top: 30px;
+  position: relative;
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application form .form-gifs__card-input input {
   width: 314px;
@@ -764,6 +768,27 @@ main {
   font-weight: 400;
   line-height: 15px;
   text-wrap: balance;
+}
+.quiz .red-wrapper__inputs {
+  width: 314px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(255, 0, 0, 0.5) !important;
+          box-shadow: 5px 5px 10px 0px rgba(255, 0, 0, 0.5) !important;
+}
+.quiz .success-wrapper__inputs {
+  width: 314px;
+  height: 50px;
+  border: 2px solid rgb(0, 255, 0);
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 255, 0, 0.5) !important;
+          box-shadow: 5px 5px 10px 0px rgba(0, 255, 0, 0.5) !important;
+}
+.quiz #result-email {
+  position: absolute;
+  font-size: 14px;
+  top: 60px;
 }
 .quiz .swiper-button-next__quiz {
   border-radius: 30px;

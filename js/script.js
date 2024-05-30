@@ -71,7 +71,10 @@ const quizSwiper = new Swiper(".mySwiper-quiz", {
                 document.querySelector('.swiper-button-next__quiz').classList.remove('hidden-quiz__btn');
                 document.querySelector('.swiper-button-prev__quiz').classList.add('hidden-quiz__btn');
                 
-            } else {
+            } else if (this.activeIndex === 5) {
+                document.querySelector('.swiper-button-next__quiz').classList.add('hidden-quiz__btn');
+                document.querySelector('.swiper-button-prev__quiz').classList.add('hidden-quiz__btn');
+            }  else {
                 document.querySelector('.swiper-button-next__quiz').classList.remove('hidden-quiz__btn');
                 document.querySelector('.swiper-button-prev__quiz').classList.remove('hidden-quiz__btn');
             }
@@ -124,3 +127,62 @@ function changeValue(value, index) {
 
 
 // не решил проблему
+
+
+
+
+
+
+// валидаци формы
+
+const submitInput = document.getElementById('post-data')
+const email = document.getElementById('email')
+const name = document.getElementById('name')
+const number = document.getElementById('number')
+
+const resultEmailText = document.getElementById('result-email')
+
+
+
+submitInput.addEventListener('click', (event) => {
+    event.preventDefault()
+
+
+    if (email.value === '' || name.value === '' || number.value === '') {
+        email.parentNode.classList.add('red-wrapper__inputs')
+        name.parentNode.classList.add('red-wrapper__inputs')
+        number.parentNode.classList.add('red-wrapper__inputs')
+    }
+
+})
+
+
+
+email.addEventListener('input', () => {
+
+    if (email.value.length >= 1) {
+        email.parentNode.classList.add('success-wrapper__inputs')
+        resultEmailText.textContent = ''
+    } else {
+        resultEmailText.textContent = 'Нельзя вписать меньше 1 символа'
+        resultEmailText.style.color = 'red'
+        email.setAttribute('placeholder', 'Нельзя вписать меньше 1 символа')
+        email.parentNode.classList.remove('success-wrapper__inputs')
+        email.parentNode.classList.add('red-wrapper__inputs')
+    }
+
+        submitInput.addEventListener('click', () => {
+            if (email.value.includes('@')) {
+                ''
+            } else {
+                email.parentNode.classList.remove('success-wrapper__inputs')
+                email.parentNode.classList.add('red-wrapper__inputs')
+                resultEmailText.textContent = '@ обязателен!'
+                resultEmailText.style.color = 'red'
+            }
+        })
+})
+
+
+
+// setAttribute - по типу getAttribute, но можно сразу же присвоить значение

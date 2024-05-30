@@ -262,17 +262,18 @@
                                         <form action="">
                                             <div class="form-gifs__card-input">
                                                 <img src="img/mail-form.svg" alt="">
-                                                <input placeholder="E-mail" type="email">
+                                                <input required placeholder="E-mail" id="email" type="email">
+                                                <p id="result-email"></p>
                                             </div>
                                             <div class="form-gifs__card-input">
                                                 <img src="img/name-form.svg" alt="">
-                                                <input placeholder="Имя" type="text">
+                                                <input required placeholder="Имя" id="name" type="text">
                                             </div>
                                             <div class="form-gifs__card-input">
-                                                <img src="img/number-form.svg" alt="">
-                                                <input placeholder="+7 (_ _ _)_ _ _-_ _-_ _" type="tel">
+                                                <img src="img/number-form.svg" id="number" alt="">
+                                                <input required placeholder="+7 (_ _ _)_ _ _-_ _-_ _" type="tel">
                                             </div>
-                                            <input class="get-quote" value="Получить рассчет" type="submit">
+                                            <input class="get-quote" id="post-data" value="Получить рассчет" type="submit">
                                             <a href="form-privacy-policy">Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями Политики конфиденциальности</a>
                                         </form>
                                     </section>
