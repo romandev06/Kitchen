@@ -135,6 +135,9 @@ function changeValue(value, index) {
 
 // валидаци формы
 
+const form = document.getElementById('form')
+
+
 const submitInput = document.getElementById('post-data')
 const email = document.getElementById('email')
 const name = document.getElementById('name')
@@ -144,45 +147,40 @@ const resultEmailText = document.getElementById('result-email')
 
 
 
-submitInput.addEventListener('click', (event) => {
+
+function validation(form) {
+    let result = true
+
+    function check(input, text) {
+        let parent = input.parentNode
+        console.log(parent, text)
+    }
+
+    form.querySelectorAll('input').forEach(input => {
+        if (input.value === '') {
+            console.log('error')
+            check(input, 'ОШИБКА!')
+            result = false
+        }
+    })
+
+    return result
+}
+
+
+
+form.addEventListener('submit', (event) => {
     event.preventDefault()
 
-
-    if (email.value === '' || name.value === '' || number.value === '') {
-        email.parentNode.classList.add('red-wrapper__inputs')
-        name.parentNode.classList.add('red-wrapper__inputs')
-        number.parentNode.classList.add('red-wrapper__inputs')
+    if (validation(form) === true) {
+        alert('success!')
     }
-
 })
 
 
 
-email.addEventListener('input', () => {
-
-    if (email.value.length >= 1) {
-        email.parentNode.classList.add('success-wrapper__inputs')
-        resultEmailText.textContent = ''
-    } else {
-        resultEmailText.textContent = 'Нельзя вписать меньше 1 символа'
-        resultEmailText.style.color = 'red'
-        email.setAttribute('placeholder', 'Нельзя вписать меньше 1 символа')
-        email.parentNode.classList.remove('success-wrapper__inputs')
-        email.parentNode.classList.add('red-wrapper__inputs')
-    }
-
-        submitInput.addEventListener('click', () => {
-            if (email.value.includes('@')) {
-                ''
-            } else {
-                email.parentNode.classList.remove('success-wrapper__inputs')
-                email.parentNode.classList.add('red-wrapper__inputs')
-                resultEmailText.textContent = '@ обязателен!'
-                resultEmailText.style.color = 'red'
-            }
-        })
-})
 
 
 
-// setAttribute - по типу getAttribute, но можно сразу же присвоить значение
+
+// setAttribute - по типу getAttribute, но можно сразу же присвоить значение (к placeholder например)
