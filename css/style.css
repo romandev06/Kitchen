@@ -28,7 +28,7 @@
   font-family: "Montserrat-medium";
 }
 
-.main-nav__content ul li a {
+.error-label-text, .main-nav__content ul li a {
   font-family: "Montserrat-semibold";
 }
 
@@ -767,23 +767,8 @@ main {
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
+  text-align: center;
   text-wrap: balance;
-}
-.quiz .red-wrapper__inputs {
-  width: 314px;
-  height: 50px;
-  border: 2px solid red;
-  border-radius: 30px;
-  -webkit-box-shadow: 5px 5px 10px 0px rgba(255, 0, 0, 0.5) !important;
-          box-shadow: 5px 5px 10px 0px rgba(255, 0, 0, 0.5) !important;
-}
-.quiz .success-wrapper__inputs {
-  width: 314px;
-  height: 50px;
-  border: 2px solid rgb(0, 255, 0);
-  border-radius: 30px;
-  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 255, 0, 0.5) !important;
-          box-shadow: 5px 5px 10px 0px rgba(0, 255, 0, 0.5) !important;
 }
 .quiz #result-email {
   position: absolute;
@@ -880,6 +865,18 @@ main {
 }
 .quiz .mini-benefits .benefits-2 h3 {
   bottom: 90px;
+}
+
+.error-input {
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(255, 0, 0, 0.7) !important;
+          box-shadow: 5px 5px 10px 0px rgba(255, 0, 0, 0.7) !important;
+}
+
+.error-label-text {
+  position: absolute;
+  bottom: -28px;
+  color: red;
+  font-size: 14px;
 }
 
 .accessories-materials {

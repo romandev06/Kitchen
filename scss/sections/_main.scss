@@ -581,6 +581,7 @@
             .form-privacy-policy {
                 color: rgb(115, 115, 115) !important;
                 @include text(12px, 400, 15px);
+                text-align: center;
                 text-wrap: balance;
             }
         }
@@ -589,21 +590,8 @@
 }
 }
 
-.red-wrapper__inputs {
-    width: 314px;
-    height: 50px;
-    border: 2px solid red;
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px 0px rgba(255, 0, 0, 0.5) !important;
-}
 
-.success-wrapper__inputs {
-    width: 314px;
-    height: 50px;
-    border: 2px solid rgb(0, 255, 0);
-    border-radius: 30px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 255, 0, 0.5) !important;
-}
+
 
 #result-email {
     position: absolute;
@@ -703,6 +691,22 @@
         }
     }
 }
+
+// input validation styles
+
+.error-input {
+    box-shadow: 5px 5px 10px 0px rgba(255, 0, 0, 0.7) !important;
+}
+
+.error-label-text {
+    position: absolute;
+    bottom: -28px;
+    color:  $red;
+    font-size: 14px;
+    @extend %semibold;
+}
+
+// input validation styles
 
 
 .accessories-materials {

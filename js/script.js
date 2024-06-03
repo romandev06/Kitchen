@@ -135,49 +135,55 @@ function changeValue(value, index) {
 
 // валидаци формы
 
-const form = document.getElementById('form')
+function validateQuizForm() {
+    function validation(form) {
+        let result = true
+
+        function createSuccess(input) {
+            const parent = input.parentNode
+
+            if (parent.classList.contains('error-input')) {
+                parent.classList.remove('error-input')
+                parent.querySelector('.error-label-text').remove()
+            }
+        }
 
 
-const submitInput = document.getElementById('post-data')
-const email = document.getElementById('email')
-const name = document.getElementById('name')
-const number = document.getElementById('number')
+        function createError(input, text) {
+            const parent = input.parentNode
+            parent.classList.add('error-input')
 
-const resultEmailText = document.getElementById('result-email')
+            const errorText = document.createElement('label')
+            errorText.classList.add('error-label-text')
+            errorText.textContent = text
 
+            parent.appendChild(errorText)
+        }
 
+        form.querySelectorAll('input').forEach(input => {
+            createSuccess(input)
 
+            if (input.value.length === 0) {
+                createError(input, 'Заполните поле!')
+                result = false
+            }
+        })
 
-function validation(form) {
-    let result = true
-
-    function check(input, text) {
-        let parent = input.parentNode
-        console.log(parent, text)
+        return result
     }
 
-    form.querySelectorAll('input').forEach(input => {
-        if (input.value === '') {
-            console.log('error')
-            check(input, 'ОШИБКА!')
-            result = false
-        }
-    })
 
-    return result
+    document.getElementById('form').addEventListener('submit', function (event) {
+        event.preventDefault()
+
+        if (validation(this)) {
+            alert('success')
+            this.querySelectorAll('input').forEach(input => input.value = '') 
+        }
+    })   // в данной части кода я создал готовый компонент, который можно переиспользовать за счет ключевого слова this
 }
 
-
-
-form.addEventListener('submit', (event) => {
-    event.preventDefault()
-
-    if (validation(form) === true) {
-        alert('success!')
-    }
-})
-
-
+validateQuizForm()
 
 
 
