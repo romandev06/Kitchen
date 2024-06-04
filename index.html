@@ -262,18 +262,19 @@
                                         <form action="" id="form">
                                             <div class="form-gifs__card-input">
                                                 <img src="img/mail-form.svg" alt="">
-                                                <input placeholder="E-mail" id="email" type="email">
+                                                <input data-min-length="10" placeholder="E-mail" id="email" type="email">
                                             </div>
                                             <div class="form-gifs__card-input">
                                                 <img src="img/name-form.svg" alt="">
-                                                <input placeholder="Имя" id="name" type="text">
+                                                <input data-required="true" data-max-length="5" placeholder="Имя" id="name" type="text">
                                             </div>
                                             <div class="form-gifs__card-input">
                                                 <img src="img/number-form.svg" id="number" alt="">
-                                                <input placeholder="+7 (_ _ _)_ _ _-_ _-_ _" type="tel">
+                                                <input data-required="true" data-max-length="7" data-min-length="5" placeholder="+7 (_ _ _)_ _ _-_ _-_ _" type="tel">
                                             </div>
                                             <button class="get-quote" id="post-data" type="submit">Получить рассчет</button>
                                             <a class="form-privacy-policy" href="https://t.me/roman_dev_06">Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями Политики конфиденциальности</a>
+                                            <p class="success-submit" id="success-submit">Форма была успешно отправлена!</p>
                                         </form>
                                     </section>
                                 </div>
@@ -566,7 +567,7 @@
                         <div>
                             <h4>Контакты:</h4>
                             <div class="footer-mail">
-                                <img src="img/mail.svg" alt="main">
+                                <img src="img/gmail.svg" alt="mail">
                                 <p>uhninv@mail.ru</p>
                             </div>
                             <div class="footer-phone">

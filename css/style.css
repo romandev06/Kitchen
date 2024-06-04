@@ -879,6 +879,25 @@ main {
   font-size: 14px;
 }
 
+.success-input {
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 128, 0, 0.7) !important;
+          box-shadow: 5px 5px 10px 0px rgba(0, 128, 0, 0.7) !important;
+}
+
+.success-submit {
+  color: green;
+  font-size: 18px;
+  position: relative;
+  top: 15px;
+  left: 20px;
+  display: none;
+}
+
+.get-quote__transparent {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .accessories-materials {
   padding: 95px 0 115px 0;
 }

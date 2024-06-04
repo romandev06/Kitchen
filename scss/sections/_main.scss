@@ -706,6 +706,24 @@
     @extend %semibold;
 }
 
+.success-input {
+    box-shadow: 5px 5px 10px 0px rgba(0, 128, 0, 0.7) !important;
+}
+
+.success-submit {
+    color: green;
+    font-size: 18px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    display: none;
+}
+
+.get-quote__transparent {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
 // input validation styles
 
 

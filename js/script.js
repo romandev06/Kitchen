@@ -141,7 +141,6 @@ function validateQuizForm() {
 
         function createSuccess(input) {
             const parent = input.parentNode
-
             if (parent.classList.contains('error-input')) {
                 parent.classList.remove('error-input')
                 parent.querySelector('.error-label-text').remove()
@@ -152,21 +151,41 @@ function validateQuizForm() {
         function createError(input, text) {
             const parent = input.parentNode
             parent.classList.add('error-input')
-
             const errorText = document.createElement('label')
             errorText.classList.add('error-label-text')
             errorText.textContent = text
-
             parent.appendChild(errorText)
         }
 
+
         form.querySelectorAll('input').forEach(input => {
             createSuccess(input)
-
-            if (input.value.length === 0) {
-                createError(input, 'Заполните поле!')
-                result = false
+            if (input.dataset.minLength) {
+                if (input.value.length < input.dataset.minLength) {
+                    createSuccess(input)
+                    result = false
+                    createError(input, `Минимальное кол-во симовлов: ${input.dataset.minLength}`)
+                }
             }
+
+            if (input.dataset.maxLength) {
+                if (input.value.length > input.dataset.maxLength) {
+                    createSuccess(input)
+                    result = false
+                    createError(input, `Максимальное кол-во симовлов: ${input.dataset.maxLength}`)
+                }
+            }
+
+            if (input.dataset.required) {
+                if (input.value.length === 0) {
+                    createSuccess(input)
+                    result = false
+                    createError(input, 'Заполните поле!')
+                }
+            }
+
+            result ? input.parentNode.classList.add('success-input') : ''
+            result ? input.disabled = true : ''
         })
 
         return result
@@ -175,10 +194,13 @@ function validateQuizForm() {
 
     document.getElementById('form').addEventListener('submit', function (event) {
         event.preventDefault()
-
         if (validation(this)) {
             alert('success')
-            this.querySelectorAll('input').forEach(input => input.value = '') 
+            this.querySelectorAll('input').forEach(input => input.value = '')
+
+            this ? document.querySelector('.form-privacy-policy').remove() : ''
+            this ? document.querySelector('.success-submit').style.display = 'block' : ''
+            this ? document.querySelector('.get-quote').classList.add('get-quote__transparent') : ''
         }
     })   // в данной части кода я создал готовый компонент, который можно переиспользовать за счет ключевого слова this
 }
