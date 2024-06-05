@@ -627,8 +627,16 @@ main {
   height: 30px;
   -webkit-box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.148);
           box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.148);
-  background: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   border-radius: 15px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.quiz .quiz-slider .swiper-slide5 .kitchen-budget__card input[type=radio]:hover {
+  background-color: rgb(255, 204, 0);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 .quiz .quiz-slider .swiper-slide5 .kitchen-budget__card input[type=radio]:checked {
   background-color: rgb(251, 216, 70);

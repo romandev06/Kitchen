@@ -195,7 +195,7 @@ function validateQuizForm() {
     document.getElementById('form').addEventListener('submit', function (event) {
         event.preventDefault()
         if (validation(this)) {
-            alert('success')
+            alert('Форма была успешно отправлена!')
             this.querySelectorAll('input').forEach(input => input.value = '')
 
             this ? document.querySelector('.form-privacy-policy').remove() : ''
