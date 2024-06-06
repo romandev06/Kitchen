@@ -262,7 +262,7 @@
                                         <form action="" id="form">
                                             <div class="form-gifs__card-input">
                                                 <img src="img/mail-form.svg" alt="">
-                                                <input data-min-length="10" placeholder="E-mail" id="email" type="email">
+                                                <input data-required="true" data-min-length="10" placeholder="E-mail" id="email" type="email">
                                             </div>
                                             <div class="form-gifs__card-input">
                                                 <img src="img/name-form.svg" alt="">
@@ -320,7 +320,7 @@
                 <section class="container">
                     <h2>Фурнитура  и  <span>материалы</span></h2>
                     <section class="accessories-materials-cards__wrapper">
-                        <div class="accessories-materials__card">
+                        <div class="accessories-materials__card" id="material-card__1">
                             <article>
                                 <div class="accessories-materials__text">
                                     <div class="accessories-materials__description">
@@ -339,11 +339,11 @@
                                         <p>- Материал имеет хорошую устойчивость к царапинам. Кроме того, его можно чистить различными химическими средствами.</p>
                                     </div>
                                 </div>
-                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                                <button class="calculate-cost__btn" data-material="material-card__1">Рассчитать стоимость</button>
                             </article>
                         </div>
 
-                        <div class="accessories-materials__card accessories-materials__card2">
+                        <div class="accessories-materials__card accessories-materials__card2" id="material-card__2">
                             <article>
                                 <div class="accessories-materials__text">
                                     <div class="accessories-materials__description">
@@ -357,15 +357,14 @@
                                     </div>
                                     <div>
                                         <p>пленок. Это позволяет создать яркие уникальные дизайны. Часто гарнитуры из МДФ имитируют натуральное дерево, камень, металл и другие материалы..</p>
-                                        
                                         <p>-  МФД не капризен и не требует специальных моющих средств. Правда, необходимо учесть, что покрытие может оказаться более требовательным.</p>
                                     </div>
                                 </div>
-                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                                <button class="calculate-cost__btn" data-material="material-card__2">Рассчитать стоимость</button>
                             </article>
                         </div>
 
-                        <div class="accessories-materials__card accessories-materials__card3">
+                        <div class="accessories-materials__card accessories-materials__card3" id="material-card__3">
                             <article>
                                 <div class="accessories-materials__text">
                                     <div class="accessories-materials__description">
@@ -381,11 +380,11 @@
                                         <p>фасады изготавливают из МДФ, поверхность, которой покрывается эмалью. Специальная краска и финишный слой лака обеспечивают надежную защиту от влаги, загрязнений, температурных колебаний в определенных</p>
                                     </div>
                                 </div>
-                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                                <button class="calculate-cost__btn" data-material="material-card__3">Рассчитать стоимость</button>
                             </article>
                         </div>
 
-                        <div class="accessories-materials__card accessories-materials__card4">
+                        <div class="accessories-materials__card accessories-materials__card4" id="material-card__4">
                             <article>
                                 <div class="accessories-materials__text">
                                     <div class="accessories-materials__description">
@@ -403,11 +402,11 @@
                                         <p>-  реализовывать любые дизайнерские задумки.</p>
                                     </div>
                                 </div>
-                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                                <button class="calculate-cost__btn" data-material="material-card__4">Рассчитать стоимость</button>
                             </article>
                         </div>
 
-                        <div class="accessories-materials__card accessories-materials__card5">
+                        <div class="accessories-materials__card accessories-materials__card5" id="material-card__5">
                             <article>
                                 <div class="accessories-materials__text">
                                     <div class="accessories-materials__description">
@@ -423,11 +422,11 @@
                                         <p>- мебельные петли, системы ящиков, фурнитура для складных и раздвижных дверей, подъемные механизмы, соединительная фурнитура, производственная техника, механизмы и наполнение для кухонной мебели</p>
                                     </div>
                                 </div>
-                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                                <button class="calculate-cost__btn" data-material="material-card__5">Рассчитать стоимость</button>
                             </article>
                         </div>
 
-                        <div class="accessories-materials__card accessories-materials__card6">
+                        <div class="accessories-materials__card accessories-materials__card6" id="material-card__6">
                             <article>
                                 <div class="accessories-materials__text">
                                     <div class="accessories-materials__description">
@@ -443,13 +442,15 @@
                                         <p>Производство продукции в соответствии с международными стандартами качества. Широкий ассортимент актуальной фурнитуры для мебели и интерьеров различных стилевых направлений, разнообразные по формам, размерам, типу покрытий и назначению.</p>
                                     </div>
                                 </div>
-                                <button class="calculate-cost__btn">Рассчитать стоимость</button>
+                                <button class="calculate-cost__btn" id="calculate-btn__6" data-material="material-card__6">Рассчитать стоимость</button>
                             </article>
                         </div>
                     </section>
                 </section>
             </div>
 
+            <!-- диниамеческое модальное окно (219 строка в js) -->
+            <div class="kitchen-modal-window__overlay-wrapper"></div>
 
 
             <div class="kithen-description">

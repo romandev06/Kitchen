@@ -208,7 +208,87 @@ function validateQuizForm() {
 validateQuizForm()
 
 
-
-
-
 // setAttribute - по типу getAttribute, но можно сразу же присвоить значение (к placeholder например)
+
+
+
+
+
+
+
+
+
+// работа с кликом и выведением конкретных данных
+
+const modalWrapper = document.querySelector('.kitchen-modal-window__overlay-wrapper')
+
+function dynamicModal(text, img) {
+    modalWrapper.innerHTML = ''
+
+    modalWrapper.insertAdjacentHTML('beforeend', `
+        <section class="kitchen-modal-window__overlay">
+            <section class="container kitchen-modal-window">
+                <div class="kitchen-modal__inner">
+                    <div class="get-sum__container">
+                        <p class="get-sum">Рассчитать стоимость</p>
+                        <svg class="close-window" width="24.695312" height="24.717773" viewBox="0 0 24.6953 24.7178" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><path id="Vector" d="M0.34 0.35L24.34 23.57M24.26 1.05L0.34 24.35" stroke="#000000" stroke-opacity="1.000000" stroke-width="1.000000"/></svg>
+                    </div>
+                    <form action="">
+                        <input type="text">
+                        <input type="text" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ ">
+                    </form>
+                    <div class="dinamics-data-kitchen">
+                        <img src="${img}" alt="">
+                        <p>${text}</p>
+                    </div>
+                    <button class="call-me__btn">Позвоните мне</button>
+                    <a id="modal-privacy-poilicy" href="https://t.me/roman_dev_06">Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями Политики конфиденциальности</a>
+                </div>
+            </section>
+        </section>
+    `)
+}
+
+
+
+function clickButton() {
+    const calculateCostButtons = document.querySelectorAll('.calculate-cost__btn')
+
+    calculateCostButtons.forEach(btn => {
+        btn.addEventListener('click', (event) => {
+            const btnAttribute = btn.getAttribute('data-material')
+            event.stopPropagation()
+
+            switch(btnAttribute) {
+                case 'material-card__1':
+                    dynamicModal('Кухни из лдсп', '../img/ldsp-mini.png')
+                    break
+                case 'material-card__2':
+                    dynamicModal('Кухни из мдф', '../img/mdf-mini.png')
+                    break
+                case 'material-card__3':
+                    dynamicModal('Кухни из эмали', '../img/emal-mini.png')
+                    break
+                case 'material-card__4':
+                    dynamicModal('Кухни с фурнитуой blum', '../img/blum-mini.png')
+                    break
+                case 'material-card__5':
+                    dynamicModal('Кухни с фурнитуой hettich', '../img/hettich-mini.png')
+                    break
+                case 'material-card__6':
+                    dynamicModal('Кухни с фурнитуой boyard', '../img/boyard-mini.png')
+                    break
+            }
+
+
+            modalWrapper.querySelectorAll('.close-window').forEach(closeWindow => {
+                closeWindow.addEventListener('click', () => modalWrapper.style.display = 'none')
+            })
+
+            modalWrapper.style.display = 'block'
+            modalWrapper.querySelector('.kitchen-modal-window__overlay').style.backgroundColor = 'rgba(0, 0, 0, 0.8)'
+        })
+    })
+}
+
+clickButton()

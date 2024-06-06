@@ -843,6 +843,123 @@
 
 
 
+
+
+.kitchen-modal-window__overlay-wrapper {
+
+    .kitchen-modal-window__overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 99999;
+
+        .kitchen-modal-window {
+            width: 555px;
+
+            background-color: $white;
+            padding: 30px;
+            margin: 250px auto 0 auto;
+
+            .kitchen-modal__inner {
+                width: 490px;
+                display: flex;
+                flex-direction: column;
+
+                .get-sum__container {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .get-sum {
+                        @include text(28px, 700, 34px);
+                        margin-bottom: 41px;
+                    }
+                }
+
+                .close-window {
+                    cursor: pointer;
+                }
+
+                .call-me__btn {
+                    @include text(20px, 600, 24px);
+                    width: 490px;
+                    padding: 19px 0;
+                    border-radius: 30px;
+                    box-shadow: 5px 5px 10px 5px rgba(248, 204, 85, 0.1);
+                    background-image: linear-gradient(268.28deg, rgb(251, 216, 70) 0.021%,rgb(255, 232, 136) 99.967%);
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 34px;
+
+                    input {
+                        width: 490px;
+                        height: 55px;
+                        border: 1px solid rgb(176, 176, 176);
+                        border-radius: 30px;
+                        padding: 0 27px;
+
+                        &:focus {
+                            border: 1px solid rgb(251, 216, 70);
+                        }
+                    }
+                }
+
+                .dinamics-data-kitchen {
+                    background-color: $white;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05);
+                    display: flex;
+                    align-items: center;
+                    gap: 42px;
+                    margin: 34px 0;
+                    padding: 15px 25px;
+
+                    p {
+                        @include text(20px, 700, 30px);
+                        color: $dark;
+                        @extend %bold;
+                    }
+                }
+
+                #modal-privacy-poilicy {
+                    color: rgb(115, 115, 115);
+                    text-align: center;
+                    margin-top: 21px;
+                }
+            }
+        }
+    }
+}
+
+.hidden-modal__wrapper {
+    display: none;
+}
+
+.visible-modal__wrapper {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .kithen-description {
     margin: 110px 0 110px 0;
 
