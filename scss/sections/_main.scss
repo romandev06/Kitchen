@@ -946,10 +946,12 @@
 }
 
 .visible-modal__wrapper {
-    display: block;
+    visibility: visible;
 }
 
-
+.kitchen-modal-window__overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 
 
