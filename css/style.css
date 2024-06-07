@@ -261,7 +261,7 @@ main {
   transition: all 0.2s linear;
 }
 .kitchen-price__content .calculate-cost button:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .kitchen-price__content .kitchen-gift {
   display: -webkit-box;
@@ -376,7 +376,7 @@ main {
   transition: all 0.2s linear;
 }
 .quiz .quiz-slider .find-cost__btn:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .quiz .quiz-slider .quiz-contenst {
   text-transform: uppercase;
@@ -768,7 +768,7 @@ main {
   margin: 30px 0 16px 0;
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application form .get-quote:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application form .form-privacy-policy {
   color: rgb(115, 115, 115) !important;
@@ -800,7 +800,7 @@ main {
   transition: all 0.2s linear;
 }
 .quiz .swiper-button-next__quiz:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .quiz .hidden-quiz__btn {
   display: none;
@@ -971,7 +971,7 @@ main {
   transition: all 0.2s linear;
 }
 .accessories-materials .calculate-cost__btn:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .accessories-materials h2 {
   font-size: 28px;
@@ -1127,6 +1127,32 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.transition-modal__wrapper {
+  -webkit-animation: transitionModal 0.2s linear forwards;
+          animation: transitionModal 0.2s linear forwards;
+}
+
+@-webkit-keyframes transitionModal {
+  from {
+    margin: 180px auto 0 auto;
+  }
+  to {
+    margin: 250px auto 0 auto;
+  }
+}
+
+@keyframes transitionModal {
+  from {
+    margin: 180px auto 0 auto;
+  }
+  to {
+    margin: 250px auto 0 auto;
+  }
+}
+.modal-scroll-y {
+  overflow-y: hidden;
+}
+
 .kithen-description {
   margin: 110px 0 110px 0;
 }
@@ -1280,7 +1306,7 @@ main {
   transition: all 0.2s linear;
 }
 .consultation-content .get-consultation input:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .consultation-content .get-consultation p {
   width: 360px;

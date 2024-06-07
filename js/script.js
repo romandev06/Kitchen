@@ -116,27 +116,6 @@ function changeValue(value, index) {
 
 
 
-// const budgetCards = document.querySelectorAll('.kitchen-budget__card-into')
-// const budgetButtons = document.querySelectorAll('.quiz-budget-radio')
-
-
-// budgetButtons.forEach(button => {
-//     button.addEventListener('click', () => {
-//         budgetCards.forEach(card => {
-//             let currentBtn = button.getAttribute('data-budget-card')
-//             card.id === currentBtn ? card.classList.add('kitchen-budget__card-into__active') : card.classList.remove('kitchen-budget__card-into__active')
-//         })
-//     })
-// })
-
-
-// не решил проблему
-
-
-
-
-
-
 // валидаци формы
 
 function validateQuizForm() {
@@ -229,7 +208,7 @@ function dynamicsMaterials() {
     const modalWrapper = document.querySelector('.kitchen-modal-window__overlay-wrapper')
 
 
-    let dynamicData = {
+    let materialData = {
         'material-card__1': {
             text: 'Кухни из лдсп',
             img: './img/ldsp-mini.png'
@@ -263,11 +242,13 @@ function dynamicsMaterials() {
 
 
     function joinMaterial(dynamic) {
-        dynamicModal(dynamicData[dynamic].text, dynamicData[dynamic].img)
+        dynamicModal(materialData[dynamic].text, materialData[dynamic].img)
     }
 
 
     function dynamicModal(text, img) {
+        document.body.classList.add('modal-scroll-y')
+
         modalWrapper.innerHTML = ''
 
         modalWrapper.insertAdjacentHTML('beforeend', 
@@ -295,9 +276,11 @@ function dynamicsMaterials() {
 
         modalWrapper.querySelectorAll('.close-window').forEach(close => close.addEventListener('click', () => {
             modalWrapper.classList.add('hidden-modal__wrapper')
+            document.body.classList.remove('modal-scroll-y')
         }))
 
         modalWrapper.classList.remove('hidden-modal__wrapper')
+        modalWrapper.querySelector('.kitchen-modal-window').classList.add('transition-modal__wrapper')
     }
 
 
