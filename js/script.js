@@ -207,6 +207,9 @@ function dynamicsMaterials() {
 
     const modalWrapper = document.querySelector('.kitchen-modal-window__overlay-wrapper')
 
+    const callMeButton = modalWrapper.querySelectorAll('.call-me__btn')
+    const modalWrapper2 = document.querySelector('.kitchen-modal-window__overlay-wrapper2')
+
 
     let materialData = {
         'material-card__1': {
@@ -281,6 +284,10 @@ function dynamicsMaterials() {
 
         modalWrapper.classList.remove('hidden-modal__wrapper')
         modalWrapper.querySelector('.kitchen-modal-window').classList.add('transition-modal__wrapper')
+
+        // callMe()   // вызываю здесь, так как после данного модального окна должно пойти следующее модальное окно, которое как раз таки и находистя в callMe()
+
+        // callMe()
     }
 
 
@@ -295,8 +302,46 @@ function dynamicsMaterials() {
     }
 
     dataButton()
+
+
+
+    // следующая часть с модалкой
+
+
+
+    // function callMe() {
+
+    //     callMeButton.forEach(btn => {
+    //         btn.addEventListener('click', () => {
+    //             modalWrapper2.insertAdjacentHTML('beforeend', `
+    //                 <section class="kitchen-modal-window__overlay">
+    //                 <section class="container kitchen-modal-window">
+    //                     <div class="kitchen-modal__inner">
+    //                         <div class="get-sum__container">
+    //                             <p class="get-sum">Заказать звонок</p>
+    //                             <svg class="close-window" width="24.695312" height="24.717773" viewBox="0 0 24.6953 24.7178" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><path id="Vector" d="M0.34 0.35L24.34 23.57M24.26 1.05L0.34 24.35" stroke="#000000" stroke-opacity="1.000000" stroke-width="1.000000"/></svg>
+    //                         </div>
+    //                         <div class="about-call">
+    //                             <svg width="25.160156" height="25.229492" viewBox="0 0 25.1602 25.2295" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><path id="Vector" d="M11.35 21.56L14.64 18.27L20.07 22.06L18.85 23.28C18.04 24.09 16.85 24.39 15.75 24.06C12.39 23.06 9.36 21.22 6.68 18.54C4 15.86 2.16 12.83 1.16 9.47C0.83 8.37 1.13 7.18 1.94 6.37L3.16 5.15L6.95 10.58L3.66 13.87M11.08 9.19C13.74 8.9 16.02 11.08 15.83 13.76L15.79 14.38M11.08 5.46C15.89 4.92 20.01 8.88 19.67 13.71L19.6 14.83M11.08 1.08C18.38 0.26 24.63 6.27 24.12 13.6L24 15.3" stroke="#99CB38" stroke-opacity="1.000000" stroke-width="2.000000"/></svg>
+    //                             <p>Вы можете задать любой интересующий Вас вопрос, уточнить цены, вызвать замерщика, проконсультироваться о продукции.</p>
+    //                         </div>
+    //                         <form action="">
+    //                             <input type="text" placeholder="Ваше имя:">
+    //                             <input type="text" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ ">
+    //                         </form>
+    //                         <button class="call-me__btn">Позвоните мне</button>
+    //                         <a id="modal-privacy-poilicy" href="https://t.me/roman_dev_06">Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями Политики конфиденциальности</a>
+    //                     </div>
+    //                 </section>
+    //             </section>
+    //                 `)
+    //         })
+    //     })
+    // }
 }
 
 dynamicsMaterials()
 
-// должен этот код разобрать и повторить с нуля
+
+
+
