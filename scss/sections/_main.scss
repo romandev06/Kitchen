@@ -170,7 +170,8 @@
             gap: 20px;
 
             input {
-                @include inputStyles(360px, 15px, 30px, 1px solid $input-color, $input-color)
+                @include inputStyles(360px, 15px, 30px, 1px solid $input-color, $input-color);
+                outline: none;
             }
         }
 

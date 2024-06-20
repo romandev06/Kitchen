@@ -327,6 +327,7 @@ main {
   border-radius: 30px;
   border: 1px solid rgb(176, 176, 176);
   color: rgb(176, 176, 176);
+  outline: none;
 }
 .sample-kitchen__container .sample-kitchen__section .sample-kitchen__mini-container {
   display: -webkit-box;
