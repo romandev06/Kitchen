@@ -74,6 +74,14 @@ $red: red;
 }
 
 
+@mixin inputStyles($w, $padd, $brrad, $bord, $col) {
+    width: $w;
+    padding: $padd;
+    border-radius: $brrad;
+    border: $bord;
+    color: $col;
+}
+
 
 // Переменные, Шаблоны, Миксины
 

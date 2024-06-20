@@ -345,3 +345,37 @@ dynamicsMaterials()
 
 
 
+
+var dropZone = document.getElementById('drop_zone')
+
+dropZone.ondragover = function(e) {
+    e.preventDefault();
+    dropZone.style.border = "2px dashed #000"
+}
+
+dropZone.ondragleave = function() {
+    dropZone.style.border = "2px dashed #ccc"
+}
+
+dropZone.ondrop = function(e) {
+    e.preventDefault();
+    dropZone.style.border = "2px dashed #ccc"
+    var file = e.dataTransfer.files[0];
+
+    if (file.type.match('image.*')) {
+        var reader = new FileReader()
+
+        reader.onload = function(e) {
+            var img = new Image();
+            img.src = e.target.result
+            dropZone.innerHTML = ''
+            dropZone.appendChild(img)
+        }
+
+        reader.readAsDataURL(file)
+    } else {
+        alert('Пожалуйста, перетащите изображение.')
+    }
+}
+
+// написать самому в следующий раз похожий код

@@ -141,6 +141,122 @@
 }
 
 
+
+
+.sample-kitchen__container {
+    background-color: rgb(245, 245, 245);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 38px 26px;
+    margin-block: 63px 98px;
+
+    .sample-kitchen__section {
+        width: 780px;
+
+        h1 {
+            color: $dark;
+            @include text(22px, 900, 35px);
+        }
+
+        .send-us__text {
+            @include text(16px, 400, 24px);
+            margin-block: 30px 39px;
+        }
+
+        .sample-kitchen__inputs {
+            display: flex;
+            gap: 20px;
+
+            input {
+                @include inputStyles(360px, 15px, 30px, 1px solid $input-color, $input-color)
+            }
+        }
+
+        .sample-kitchen__mini-container {
+            display: flex;
+            align-items: center;
+            margin-top: 28px;
+
+            .drag-container {
+                display: flex;
+                align-items: center;
+                gap: 22px;
+
+                div {
+                    width: 50px;
+                    height: 50px;
+                    background-color: $yellow;
+                    border-radius: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    img {
+                        width: 15px !important;
+                        height: 49px !important;
+                    }
+                }
+
+                p {
+                    width: 262px;
+                    @include text(18px, 400, 22px);
+                    color: rgb(115, 115, 115);
+                }
+            }
+
+            .sample-kitchen__calculate-cost {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                button {
+                    @include calculateCost(360px, none, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%,rgb(255, 232, 136) 99.972%));
+                    padding: 19px;
+                    cursor: pointer;
+                    transition: all 0.2s linear;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+
+                a {
+                    color: rgb(115, 115, 115);
+                    @include text(12px, 400, 15px);
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#drop_zone {
+
+    img {
+        width: 111px;
+        height: 111px;
+    }
+}
+
+
+
+
+
+
+
+
+
 .quiz {
     background-image: linear-gradient(90.00deg, rgb(255, 228, 114),rgb(248, 204, 85) 100%,rgb(251, 216, 70) 100%);
     // height: 800px;
