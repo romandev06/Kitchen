@@ -97,8 +97,8 @@ quizRadioButtons.forEach(button => {
             let currentBtn = button.getAttribute('data-radio-btn')
             card.id === currentBtn ? card.classList.add('quiz-card__select-style') : card.classList.remove('quiz-card__select-style')
 
-            card.id === currentBtn ? card.querySelector('img').style.transform = 'scale(1.1)' : card.querySelector('img').style.transform = 'scale(1.0)'
-            card.id === currentBtn ? card.querySelector('img').style.transition = '0.3s linear' : ''
+            card.id === currentBtn ? card.style.transform = 'scale(1.1)' : card.style.transform = 'scale(1.0)'
+            card.id === currentBtn ? card.style.transition = '0.3s linear' : ''
         })
 
     })

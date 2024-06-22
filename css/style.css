@@ -255,13 +255,16 @@ main {
   border-radius: 30px;
   -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
           box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
-  background-image: linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%, rgb(255, 232, 136) 99.972%);
+  background-color: rgba(197, 210, 223, 0.5) !important;
   cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  background: right/0% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: right/0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .kitchen-price__content .calculate-cost button:hover {
-  opacity: 0.6;
+  background: left/100% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: left/100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
 }
 .kitchen-price__content .kitchen-gift {
   display: -webkit-box;
@@ -397,15 +400,18 @@ main {
   border-radius: 30px;
   -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
           box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
-  background-image: linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%, rgb(255, 232, 136) 99.972%);
+  background-color: rgba(197, 210, 223, 0.5) !important;
   padding: 19px;
   cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  background: right/0% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: right/0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
   margin-bottom: 10px;
 }
 .sample-kitchen__container .sample-kitchen__section .sample-kitchen__mini-container .sample-kitchen__calculate-cost button:hover {
-  opacity: 0.6;
+  background: left/100% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: left/100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
 }
 .sample-kitchen__container .sample-kitchen__section .sample-kitchen__mini-container .sample-kitchen__calculate-cost a {
   color: rgb(115, 115, 115);
@@ -498,22 +504,29 @@ main {
   border: 3px solid rgb(251, 216, 70);
 }
 .quiz .quiz-slider .find-cost__btn {
-  width: 253px;
-  padding: 16px;
+  width: 310px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
   border-radius: 30px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-  background-image: linear-gradient(268.28deg, rgb(248, 204, 85) 0.064%, rgb(255, 221, 129) 99.899%);
+  -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+          box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+  background-color: rgba(197, 210, 223, 0.5) !important;
   color: rgb(51, 51, 51);
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  background: right/0% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: right/0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .quiz .quiz-slider .find-cost__btn:hover {
-  opacity: 0.6;
+  background: left/100% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: left/100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
 }
 .quiz .quiz-slider .quiz-contenst {
   text-transform: uppercase;
@@ -889,23 +902,29 @@ main {
   outline: none;
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application form .get-quote {
+  width: 360px;
   height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
   border-radius: 30px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-  background: linear-gradient(268.28deg, rgb(248, 204, 85) 0.022%, rgb(255, 221, 129) 99.965%);
+  -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+          box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+  background-color: rgba(197, 210, 223, 0.5) !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  color: rgb(51, 51, 51);
-  border: none;
+  margin-block: 30px 16px;
   cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  margin: 30px 0 16px 0;
+  background: right/0% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: right/0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application form .get-quote:hover {
-  opacity: 0.6;
+  background: left/100% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: left/100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
 }
 .quiz .quiz-slider .form-gifs__wrapper .form-gifs__application form .form-privacy-policy {
   color: rgb(115, 115, 115) !important;
@@ -914,6 +933,11 @@ main {
   line-height: 15px;
   text-align: center;
   text-wrap: balance;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.quiz .quiz-slider .form-gifs__wrapper .form-gifs__application form .form-privacy-policy:hover {
+  color: black !important;
 }
 .quiz #result-email {
   position: absolute;
@@ -921,23 +945,29 @@ main {
   top: 60px;
 }
 .quiz .swiper-button-next__quiz {
-  border-radius: 30px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-  background-image: linear-gradient(268.28deg, rgb(248, 204, 85) 0.1%, rgb(255, 221, 129) 99.844%);
   width: 170px;
   height: 50px;
-  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
   color: rgb(51, 51, 51);
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+          box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+  background-color: rgba(197, 210, 223, 0.5) !important;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  margin: 210px 20px 0 0;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  cursor: pointer;
+  margin-block: 210px 20px;
+  background: right/0% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: right/0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .quiz .swiper-button-next__quiz:hover {
-  opacity: 0.6;
+  background: left/100% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: left/100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
 }
 .quiz .hidden-quiz__btn {
   display: none;
@@ -1100,15 +1130,18 @@ main {
   border-radius: 30px;
   -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
           box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
-  background-image: linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%, rgb(255, 232, 136) 99.972%);
+  background-color: rgba(197, 210, 223, 0.5) !important;
   cursor: pointer;
   position: absolute;
   bottom: 20px;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  background: right/0% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: right/0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .accessories-materials .calculate-cost__btn:hover {
-  opacity: 0.6;
+  background: left/100% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: left/100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
 }
 .accessories-materials h2 {
   font-size: 28px;
@@ -1189,21 +1222,29 @@ main {
   cursor: pointer;
 }
 .kitchen-modal-window__overlay-wrapper .kitchen-modal-window__overlay .kitchen-modal-window .kitchen-modal__inner .call-me__btn {
+  width: 490px;
+  height: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+          box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+  background-color: rgba(197, 210, 223, 0.5) !important;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  width: 490px;
-  padding: 19px 0;
-  border-radius: 30px;
-  -webkit-box-shadow: 5px 5px 10px 5px rgba(248, 204, 85, 0.1);
-          box-shadow: 5px 5px 10px 5px rgba(248, 204, 85, 0.1);
-  background-image: linear-gradient(268.28deg, rgb(251, 216, 70) 0.021%, rgb(255, 232, 136) 99.967%);
+  padding: 16px 0;
   cursor: pointer;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  background: right/0% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: right/0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
 }
 .kitchen-modal-window__overlay-wrapper .kitchen-modal-window__overlay .kitchen-modal-window .kitchen-modal__inner .call-me__btn:hover {
-  opacity: 0.6;
+  background: left/100% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: left/100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
 }
 .kitchen-modal-window__overlay-wrapper .kitchen-modal-window__overlay .kitchen-modal-window .kitchen-modal__inner form {
   display: -webkit-box;
@@ -1430,20 +1471,29 @@ main {
   gap: 30px;
 }
 .consultation-content .get-consultation input {
+  width: 360px;
+  height: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgb(51, 51, 51);
   border-radius: 30px;
   -webkit-box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
           box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
-  background: linear-gradient(268.28deg, rgb(251, 216, 70) 0.032%, rgb(255, 232, 136) 99.95%);
-  color: rgb(51, 51, 51);
+  background-color: rgba(197, 210, 223, 0.5) !important;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  background: right/0% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: right/0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+  background-color: rgba(197, 210, 223, 0.7) !important;
 }
 .consultation-content .get-consultation input:hover {
-  opacity: 0.6;
+  background: left/100% 100% no-repeat -webkit-gradient(linear, left top, left bottom, from(rgb(245, 201, 26)), to(rgb(255, 239, 176)));
+  background: left/100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
 }
 .consultation-content .get-consultation p {
   width: 360px;

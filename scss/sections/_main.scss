@@ -113,12 +113,13 @@
             gap: 30px;
 
             button {
-                @include calculateCost(356px, 63px, 20px, 700, 24px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%,rgb(255, 232, 136) 99.972%));
+                @include calculateCost(356px, 63px, 20px, 700, 24px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), $btn-color);
                 cursor: pointer;
-                transition: all 0.2s linear;
+                background: right / 0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+                transition: background 0.5s linear;
 
                 &:hover {
-                    opacity: 0.6;
+                    background: left / 100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
                 }
             }
         }
@@ -215,14 +216,15 @@
                 text-align: center;
 
                 button {
-                    @include calculateCost(360px, none, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%,rgb(255, 232, 136) 99.972%));
+                    @include calculateCost(360px, none, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), $btn-color);
                     padding: 19px;
                     cursor: pointer;
-                    transition: all 0.2s linear;
+                    background: right / 0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+                    transition: background 0.5s linear;
                     margin-bottom: 10px;
 
                     &:hover {
-                        opacity: 0.6;
+                        background: left / 100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
                     }
                 }
 
@@ -321,14 +323,15 @@
         }
 
         .find-cost__btn {
-            @include findTheCostButton (253px, 16px, 30px, 0px 4px 4px 0px rgba(248, 204, 85, 0.25), linear-gradient(268.28deg, rgb(248, 204, 85) 0.064%,rgb(255, 221, 129) 99.899%));
+            @include calculateCost(310px, 50px, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), $btn-color);
             color: $dark;
             @include text(20px, 500, 24px);
             cursor: pointer;
-            transition: all 0.2s linear;
+            background: right / 0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+            transition: background 0.5s linear;
 
             &:hover {
-                opacity: 0.6;
+                background: left / 100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
             }
         }
 
@@ -685,19 +688,15 @@
             }
 
             .get-quote {
-                height: 50px;
-                border-radius: 30px;
-                box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-                background: linear-gradient(268.28deg, rgb(248, 204, 85) 0.022%,rgb(255, 221, 129) 99.965%);
+                @include calculateCost(360px, 50px, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), $btn-color);
                 @include text(16px, 400, 19px);
-                color: $dark;
-                border: none;
+                margin-block: 30px 16px;
                 cursor: pointer;
-                transition: all 0.2s linear;
-                margin: 30px 0 16px 0;
+                background: right / 0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+                transition: background 0.5s linear;
 
                 &:hover {
-                    opacity: 0.6;
+                    background: left / 100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
                 }
             }
 
@@ -706,6 +705,11 @@
                 @include text(12px, 400, 15px);
                 text-align: center;
                 text-wrap: balance;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    color: black !important;
+                }
             }
         }
         
@@ -723,19 +727,15 @@
 }
 
 .swiper-button-next__quiz {
-    border-radius: 30px;
-    box-shadow: 0px 4px 4px 0px rgba(248, 204, 85, 0.25);
-    background-image: linear-gradient(268.28deg, rgb(248, 204, 85) 0.1%,rgb(255, 221, 129) 99.844%);
-    width: 170px;
-    height: 50px;
-    cursor: pointer;
-    color: $dark;
+    @include calculateCost(170px, 50px, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), $btn-color);
     @include text(20px, 500, 24px);
-    margin: 210px 20px 0 0;
-    transition: all 0.2s linear;
+    cursor: pointer;
+    margin-block: 210px 20px;
+    background: right / 0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+    transition: background 0.5s linear;
 
     &:hover {
-        opacity: 0.6;
+        background: left / 100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
     }
 }
 
@@ -888,14 +888,15 @@
     }
 
     .calculate-cost__btn {
-        @include calculateCost(320px, 40px, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), linear-gradient(268.28deg, rgb(251, 216, 70) 0.018%,rgb(255, 232, 136) 99.972%));
+        @include calculateCost(320px, 40px, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), $btn-color);
         cursor: pointer;
         position: absolute;
         bottom: 20px;
-        transition: all 0.2s linear;
+        background: right / 0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+        transition: background 0.5s linear;
 
         &:hover {
-            opacity: 0.6;
+            background: left / 100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
         }
     }
 
@@ -999,17 +1000,15 @@
                 }
 
                 .call-me__btn {
+                    @include calculateCost(490px, none, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), $btn-color);
                     @include text(20px, 600, 24px);
-                    width: 490px;
-                    padding: 19px 0;
-                    border-radius: 30px;
-                    box-shadow: 5px 5px 10px 5px rgba(248, 204, 85, 0.1);
-                    background-image: linear-gradient(268.28deg, rgb(251, 216, 70) 0.021%,rgb(255, 232, 136) 99.967%);
+                    padding: 16px 0;
                     cursor: pointer;
-                    transition: all 0.3s linear;
+                    background: right / 0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+                    transition: background 0.5s linear;
 
                     &:hover {
-                        opacity: 0.6;
+                        background: left / 100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
                     }
                 }
 
@@ -1244,17 +1243,16 @@
         gap: 30px;
 
         input {
-            border-radius: 30px;
-            box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
-            background: linear-gradient(268.28deg, rgb(251, 216, 70) 0.032%,rgb(255, 232, 136) 99.95%);
-            color: $dark;
+            @include calculateCost(360px, none, 16px, 700, 20px, $dark, 30px,  5px 8px 5px 0px rgba(248, 204, 85, 0.1), $btn-color);
             @include text(20px, 700, 24px);
             cursor: pointer;
-            transition: all 0.2s linear;
+            background: right / 0% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+            transition: background 0.5s linear;
+            background-color: rgba(197, 210, 223, 0.7) !important;
 
-            &:hover {
-                opacity: 0.6;
-            }
+                &:hover {
+                    background: left / 100% 100% no-repeat linear-gradient(rgb(245, 201, 26), rgb(255, 239, 176));
+                }
         }
 
         p {
