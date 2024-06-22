@@ -422,7 +422,7 @@ main {
   transition: all 0.2s linear;
 }
 .sample-kitchen__container .sample-kitchen__section .sample-kitchen__mini-container .sample-kitchen__calculate-cost a:hover {
-  opacity: 0.6;
+  color: black !important;
 }
 
 #drop_zone img {
